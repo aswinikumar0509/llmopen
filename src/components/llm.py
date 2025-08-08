@@ -9,7 +9,6 @@ from src.components.prompt import prompt
 from src.components.data_ingestion import load_documents_from_text_file, filter_to_minimal_docs
 from src.components.data_embedding import prepare_text_chunks_with_embeddings
 from langchain.retrievers import BM25Retriever, EnsembleRetriever
-from langchain_openai import ChatOpenAI
 import os
 
 
@@ -23,10 +22,11 @@ os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
 from langchain_groq import ChatGroq
 
-llm = ChatOpenAI(
-    model_name="gpt-4",  
+llm = ChatGroq(
+    groq_api_key=GROQ_API_KEY,
+    model_name="Llama3-8b-8192",
     temperature=0.5,
-    top_p=0.85
+    top_p=0.9
 )
 
 
