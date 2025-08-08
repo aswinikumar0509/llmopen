@@ -690,3 +690,20 @@ a student has been held back due to semester backlogs and he claims that his pap
 2025-08-08 21:41:19,456 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
 2025-08-08 21:41:19,860 - INFO - \u2705 Similarity (query \u2194 answer): 0.8126
 2025-08-08 21:41:19,860 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7787
+2025-08-08 22:11:34,723 - INFO - Use pytorch device_name: cpu
+2025-08-08 22:11:34,723 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 22:11:39,467 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 22:11:40,481 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 22:11:41,208 - INFO - \U0001f50d Query: judgments where in matrimonial cases call recordings without consent is considered inadmissible 
+2025-08-08 22:11:41,264 - INFO - Use pytorch device_name: cpu
+2025-08-08 22:11:41,264 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 22:11:47,896 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:11:48,230 - INFO - \u2705 Similarity (query \u2194 answer): 0.7388
+2025-08-08 22:11:48,230 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6820
+2025-08-08 22:12:57,453 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:13:36,250 - INFO - \U0001f50d Query: judgments where in matrimonial cases call recordings without consent is considered inadmissible 
+2025-08-08 22:13:36,302 - INFO - Use pytorch device_name: cpu
+2025-08-08 22:13:36,302 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 22:13:42,282 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 22:13:42,606 - INFO - \u2705 Similarity (query \u2194 answer): 0.7683
+2025-08-08 22:13:42,606 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7335
