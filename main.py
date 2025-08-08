@@ -12,13 +12,12 @@ from reportlab.lib.styles import getSampleStyleSheet
 
 from langchain.memory import ConversationBufferMemory
 from src.components.retrival import retrieve_and_score_query
-from src.components.tools import summarizer_fn  
+from src.components.tools import summarizer_fn, legal_drafting_fn
 
 # Initialize memory
 if "chat_memory" not in st.session_state:
     st.session_state.chat_memory = ConversationBufferMemory(return_messages=True)
 
-# Store answer and sources
 if "retrieved_answer" not in st.session_state:
     st.session_state.retrieved_answer = ""
 
@@ -54,16 +53,11 @@ with st.sidebar:
 
         for msg in messages:
             role = "You" if msg.type == "human" else "Assistant"
-            content = msg.content or ""
-            content = str(content)
+            content = str(msg.content or "")
 
             # Make links clickable in Assistant responses
             if role == "Assistant":
-                content = re.sub(
-                    r'(https?://\S+)',
-                    r'<a href="\1" color="blue">\1</a>',
-                    content
-                )
+                content = re.sub(r'(https?://\S+)', r'<a href="\1" color="blue">\1</a>', content)
 
             story.append(Paragraph(f"<b>{role}:</b> {content}", styles["Normal"]))
             story.append(Spacer(1, 12))
@@ -85,21 +79,25 @@ with st.sidebar:
 
 # Main UI
 st.title("⚖️ Vakki: Legal Research Assistant")
-st.markdown("Ask a legal question and retrieve relevant judgments")
+st.markdown("Ask a legal question, summarize answers, or draft legal documents")
 
 query = st.text_area(
-    "Enter your legal question:",
+    "Enter your legal question or drafting request:",
     height=90,
     placeholder="Ask Vakki..."
 )
 
-col1, col2 = st.columns([1, 1])
+# Three columns for actions
+col1, col2, col3 = st.columns([1, 1, 1])
 
 with col1:
     retrieve_button = st.button("🔍 Retrieve Answer")
 
 with col2:
     summarize_button = st.button("📝 Summarize Answer")
+
+with col3:
+    draft_button = st.button("📄 Draft Legal Document")
 
 # ✅ Retrieve Answer
 if retrieve_button and query.strip():
@@ -108,7 +106,6 @@ if retrieve_button and query.strip():
             answer, similarity, faithfulness, sources = retrieve_and_score_query(
                 query, memory=st.session_state.chat_memory
             )
-
             st.session_state.retrieved_answer = answer
             st.session_state.retrieved_sources = sources
 
@@ -116,12 +113,6 @@ if retrieve_button and query.strip():
             st.markdown(f"**🧠 Answer:**\n\n{answer}")
             st.markdown(f"**🔁 Similarity Score (Query ↔ Answer):** `{similarity:.4f}`")
             st.markdown(f"**📚 Faithfulness Score (Context ↔ Answer):** `{faithfulness:.4f}`")
-
-            # if sources:
-            #     st.markdown("#### 🔗 Sources Used:")
-            #     for i, src in enumerate(sources, 1):
-            #         st.markdown(f"**{i}.** [{src['source']}]({src['source']})")
-            #         st.caption(f"Excerpt: {src['excerpt'][:300]}...")
 
         except Exception as e:
             st.error(f"❌ An error occurred: {e}")
@@ -139,5 +130,18 @@ elif summarize_button:
             except Exception as e:
                 st.error(f"❌ Failed to summarize: {e}")
 
+# ✅ Draft Legal Document
+elif draft_button:
+    if not query.strip():
+        st.warning("❗ Please enter drafting instructions first.")
+    else:
+        with st.spinner("Drafting your legal document..."):
+            try:
+                draft = legal_drafting_fn(query)
+                st.success("📄 Draft Generated")
+                st.markdown(f"**🖋 Draft:**\n\n{draft}")
+            except Exception as e:
+                st.error(f"❌ Failed to draft: {e}")
+
 else:
-    st.info("Enter a question above and click 'Retrieve Answer', then 'Summarize Answer' if needed.")
+    st.info("Enter a question above and click 'Retrieve Answer', 'Summarize Answer', or 'Draft Legal Document'.")
