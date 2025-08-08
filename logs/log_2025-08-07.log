@@ -1,0 +1,130 @@
+2025-08-07 18:59:10,358 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-07 18:59:12,560 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-07 19:00:15,959 - INFO - \U0001f50d Query: PETITIONER:
+MAKHAN LAL MALHOTRA AND OTHERS
+        Vs.
+RESPONDENT:
+THE UNION OF INDIA
+2025-08-07 19:00:27,181 - INFO - Use pytorch device_name: cpu
+2025-08-07 19:00:27,181 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-07 19:00:32,770 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-07 19:00:34,329 - ERROR - \u274c Retrieval failed: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Thu, 07 Aug 2025 13:30:36 GMT', 'Content-Type': 'application/json', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '233', 'x-pinecone-request-id': '4949630089167106556', 'x-envoy-upstream-service-time': '1', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 1536 does not match the dimension of the index 384","details":[]}
+
+2025-08-07 19:02:54,166 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-07 19:02:55,292 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-07 19:03:00,394 - INFO - \U0001f50d Query: PETITIONER:
+MAKHAN LAL MALHOTRA AND OTHERS
+        Vs.
+RESPONDENT:
+THE UNION OF INDIA
+2025-08-07 19:03:00,406 - INFO - Use pytorch device_name: cpu
+2025-08-07 19:03:00,406 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-07 19:03:04,384 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-08-07 19:03:05,567 - ERROR - \u274c Retrieval failed: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Thu, 07 Aug 2025 13:33:07 GMT', 'Content-Type': 'application/json', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '238', 'x-pinecone-request-id': '5974218455694615310', 'x-envoy-upstream-service-time': '1', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 1536 does not match the dimension of the index 384","details":[]}
+
+2025-08-07 19:05:11,063 - INFO - Use pytorch device_name: cpu
+2025-08-07 19:05:11,063 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-07 19:05:14,200 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-07 19:05:15,356 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-07 19:05:21,556 - INFO - \U0001f50d Query: PETITIONER:
+MAKHAN LAL MALHOTRA AND OTHERS
+        Vs.
+RESPONDENT:
+THE UNION OF INDIA
+2025-08-07 19:05:21,568 - INFO - Use pytorch device_name: cpu
+2025-08-07 19:05:21,568 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-07 19:05:27,819 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-07 19:05:28,234 - INFO - \u2705 Similarity (query \u2194 answer): 0.6026
+2025-08-07 19:05:28,234 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8404
+2025-08-07 19:05:28,234 - INFO - \U0001f4ce Sources used:
+2025-08-07 19:05:28,234 - INFO - 1. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 6 of 13  but  not  yet  signed  does not prima  fac...
+2025-08-07 19:05:28,234 - INFO - 2. http://192.168.1.26:8000/pdf_files/93.pdf — excerpt: SUPREME COURT OF INDIA Page 1 of 9  PETITIONER: MAKHAN LAL MALHOTRA AND OTHERS  Judges: Not found  J...
+2025-08-07 19:05:28,234 - INFO - 3. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 5 of 13  Having stated the respective cases of the ...
+2025-08-07 19:05:28,234 - INFO - 4. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: nature  of the cases.  The respondents have  also  contested the correctness of the allegation that ...
+2025-08-07 19:05:28,234 - INFO - 5. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: petitioner no.  1 to give evidence in Grewal’s case.  On May 28,  1959,  petitioner no.  1 wrote to ...
+2025-08-07 19:07:48,834 - INFO - Use pytorch device_name: cpu
+2025-08-07 19:07:48,834 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-07 19:07:54,460 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-07 19:07:55,642 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-07 19:08:00,625 - INFO - \U0001f50d Query: PETITIONER:
+MAKHAN LAL MALHOTRA AND OTHERS
+        Vs.
+RESPONDENT:
+THE UNION OF INDIA
+2025-08-07 19:08:00,641 - INFO - Use pytorch device_name: cpu
+2025-08-07 19:08:00,641 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-07 19:08:07,512 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-07 19:08:07,851 - INFO - \u2705 Similarity (query \u2194 answer): 0.7168
+2025-08-07 19:08:07,851 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8921
+2025-08-07 19:08:07,851 - INFO - \U0001f4ce Sources used:
+2025-08-07 19:08:07,851 - INFO - 1. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 6 of 13  but  not  yet  signed  does not prima  fac...
+2025-08-07 19:08:07,851 - INFO - 2. http://192.168.1.26:8000/pdf_files/93.pdf — excerpt: SUPREME COURT OF INDIA Page 1 of 9  PETITIONER: MAKHAN LAL MALHOTRA AND OTHERS  Judges: Not found  J...
+2025-08-07 19:08:07,851 - INFO - 3. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 5 of 13  Having stated the respective cases of the ...
+2025-08-07 19:08:07,852 - INFO - 4. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: nature  of the cases.  The respondents have  also  contested the correctness of the allegation that ...
+2025-08-07 19:08:07,852 - INFO - 5. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: petitioner no.  1 to give evidence in Grewal’s case.  On May 28,  1959,  petitioner no.  1 wrote to ...
+2025-08-07 19:09:05,435 - INFO - Use pytorch device_name: cpu
+2025-08-07 19:09:05,435 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-07 19:09:08,554 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-07 19:09:09,760 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-07 19:09:14,665 - INFO - \U0001f50d Query: PETITIONER:
+MAKHAN LAL MALHOTRA AND OTHERS
+        Vs.
+RESPONDENT:
+THE UNION OF INDIA
+2025-08-07 19:09:14,679 - INFO - Use pytorch device_name: cpu
+2025-08-07 19:09:14,679 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-07 19:09:19,751 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-07 19:09:20,128 - INFO - \u2705 Similarity (query \u2194 answer): 0.7158
+2025-08-07 19:09:20,128 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8961
+2025-08-07 19:09:20,128 - INFO - \U0001f4ce Sources used:
+2025-08-07 19:09:20,128 - INFO - 1. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 6 of 13  but  not  yet  signed  does not prima  fac...
+2025-08-07 19:09:20,128 - INFO - 2. http://192.168.1.26:8000/pdf_files/93.pdf — excerpt: SUPREME COURT OF INDIA Page 1 of 9  PETITIONER: MAKHAN LAL MALHOTRA AND OTHERS  Judges: Not found  J...
+2025-08-07 19:09:20,128 - INFO - 3. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 5 of 13  Having stated the respective cases of the ...
+2025-08-07 19:09:20,128 - INFO - 4. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: nature  of the cases.  The respondents have  also  contested the correctness of the allegation that ...
+2025-08-07 19:09:20,128 - INFO - 5. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: petitioner no.  1 to give evidence in Grewal’s case.  On May 28,  1959,  petitioner no.  1 wrote to ...
+2025-08-07 19:24:33,382 - INFO - \U0001f50d Query: PETITIONER:
+MAKHAN LAL MALHOTRA AND OTHERS
+        Vs.
+RESPONDENT:
+THE UNION OF INDIA
+2025-08-07 19:24:33,400 - INFO - Use pytorch device_name: cpu
+2025-08-07 19:24:33,400 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-07 19:24:42,240 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-07 19:24:42,652 - INFO - \u2705 Similarity (query \u2194 answer): 0.5848
+2025-08-07 19:24:42,652 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8445
+2025-08-07 19:24:42,652 - INFO - \U0001f4ce Sources used:
+2025-08-07 19:24:42,652 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-02-2019_to_28-02-2019/38_2018_Judgement_28-Feb-2019.pdf — excerpt: SLP(C)No.4251-4252 of 2018         Abdul Hakeem M.A. & Ors. Vs. Mahatma Gandhi University & Ors.    ...
+2025-08-07 19:24:42,652 - INFO - 2. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 6 of 13  but  not  yet  signed  does not prima  fac...
+2025-08-07 19:24:42,653 - INFO - 3. http://192.168.1.26:8000/pdf_files/93.pdf — excerpt: SUPREME COURT OF INDIA Page 1 of 9  PETITIONER: MAKHAN LAL MALHOTRA AND OTHERS  Judges: Not found  J...
+2025-08-07 19:24:42,653 - INFO - 4. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 5 of 13  Having stated the respective cases of the ...
+2025-08-07 19:24:42,653 - INFO - 5. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: nature  of the cases.  The respondents have  also  contested the correctness of the allegation that ...
+2025-08-07 20:34:39,782 - INFO - \U0001f50d Query: rarest of rare 
+2025-08-07 20:34:39,796 - INFO - Use pytorch device_name: cpu
+2025-08-07 20:34:39,796 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-07 20:34:45,840 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-07 20:34:46,186 - INFO - \u2705 Similarity (query \u2194 answer): 0.4021
+2025-08-07 20:34:46,187 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.4432
+2025-08-07 20:34:46,187 - INFO - \U0001f4ce Sources used:
+2025-08-07 20:34:46,187 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-08-2017_to_31-08-2017/48_2017_Order_18-Aug-2017.pdf — excerpt: 20% of molasses under Clause (3) of the Government Order 2004  irrespective  of  the  stock  possess...
+2025-08-07 20:34:46,187 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-02-2019_to_28-02-2019/90_2018_Judgement_15-Feb-2019.pdf — excerpt: the Court.  The danger of this would be that Courts can well draw upon such irregularly produced mat...
+2025-08-07 20:34:46,187 - INFO - 3. http://192.168.1.26:8000/pdf_files/76.pdf — excerpt: been placed before us not with a view to an interpre-    tation of the section, but to show what opi...
+2025-08-07 20:34:46,187 - INFO - 4. http://192.168.1.26:8000/pdf_files/24.pdf — excerpt: R          1968 SC 658  (8)  RF         1969 SC 378  (3)  RF         1970 SC 169  (11)  R          1...
+2025-08-07 20:34:46,187 - INFO - 5. http://192.168.1.26:8000/pdf_sc/01-09-2017_to_30-09-2017/13__Judgement_20-Sep-2017.pdf — excerpt: situations and possibilities. Once a conclusion, that fraud has been  committed while dealing in sec...
+2025-08-07 20:36:40,270 - INFO - \U0001f50d Query: rarest of rare 
+2025-08-07 20:36:40,293 - INFO - Use pytorch device_name: cpu
+2025-08-07 20:36:40,293 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-07 20:36:48,056 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-07 20:36:48,401 - INFO - \u2705 Similarity (query \u2194 answer): 0.5585
+2025-08-07 20:36:48,402 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.4841
+2025-08-07 20:36:48,402 - INFO - \U0001f4ce Sources used:
+2025-08-07 20:36:48,402 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-08-2017_to_31-08-2017/48_2017_Order_18-Aug-2017.pdf — excerpt: 20% of molasses under Clause (3) of the Government Order 2004  irrespective  of  the  stock  possess...
+2025-08-07 20:36:48,402 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-02-2019_to_28-02-2019/90_2018_Judgement_15-Feb-2019.pdf — excerpt: the Court.  The danger of this would be that Courts can well draw upon such irregularly produced mat...
+2025-08-07 20:36:48,402 - INFO - 3. http://192.168.1.26:8000/pdf_files/76.pdf — excerpt: been placed before us not with a view to an interpre-    tation of the section, but to show what opi...
+2025-08-07 20:36:48,402 - INFO - 4. http://192.168.1.26:8000/pdf_files/24.pdf — excerpt: R          1968 SC 658  (8)  RF         1969 SC 378  (3)  RF         1970 SC 169  (11)  R          1...
+2025-08-07 20:36:48,402 - INFO - 5. http://192.168.1.26:8000/pdf_sc/01-09-2017_to_30-09-2017/13__Judgement_20-Sep-2017.pdf — excerpt: situations and possibilities. Once a conclusion, that fraud has been  committed while dealing in sec...

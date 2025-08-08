@@ -1,0 +1,692 @@
+2025-08-08 15:01:02,156 - ERROR - Error loading documents from C:/Users/aswin/OneDrive/Documents/Data Science/Gen AI/Openairag/txt_files: Error loading C:/Users/aswin/OneDrive/Documents/Data Science/Gen AI/Openairag/txt_files
+2025-08-08 15:01:02,172 - ERROR - Traceback:
+Traceback (most recent call last):
+  File "C:\Users\aswin\anaconda3\envs\ragenv\lib\site-packages\langchain_community\document_loaders\text.py", line 42, in lazy_load
+    with open(self.file_path, encoding=self.encoding) as f:
+PermissionError: [Errno 13] Permission denied: 'C:/Users/aswin/OneDrive/Documents/Data Science/Gen AI/Openairag/txt_files'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\aswin\OneDrive\Documents\Data Science\Gen AI\Openairag\src\components\data_ingestion.py", line 20, in load_documents_from_text_file
+    docs = loader.load()
+  File "C:\Users\aswin\anaconda3\envs\ragenv\lib\site-packages\langchain_core\document_loaders\base.py", line 32, in load
+    return list(self.lazy_load())
+  File "C:\Users\aswin\anaconda3\envs\ragenv\lib\site-packages\langchain_community\document_loaders\text.py", line 58, in lazy_load
+    raise RuntimeError(f"Error loading {self.file_path}") from e
+RuntimeError: Error loading C:/Users/aswin/OneDrive/Documents/Data Science/Gen AI/Openairag/txt_files
+
+2025-08-08 15:02:07,202 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:02:07,202 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:02:11,022 - INFO - Loading Pinecone index 'legal-chatbot2'...
+2025-08-08 15:02:13,127 - INFO - \u2705 Successfully loaded Pinecone index 'legal-chatbot2'.
+2025-08-08 15:02:27,037 - INFO - \U0001f50d Query: Provide me the judgenment for the murder case
+2025-08-08 15:02:27,043 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:02:27,043 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:02:31,059 - ERROR - \u274c Retrieval failed: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 08 Aug 2025 09:32:33 GMT', 'Content-Type': 'application/json', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '52', 'x-pinecone-request-id': '1744308370792582493', 'x-envoy-upstream-service-time': '51', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 384 does not match the dimension of the index 1536","details":[]}
+
+2025-08-08 15:28:34,636 - INFO - \U0001f50d Query: Provide me the judgenment for the murder case
+2025-08-08 15:28:34,642 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:28:34,642 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:28:38,339 - ERROR - \u274c Retrieval failed: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 08 Aug 2025 09:58:40 GMT', 'Content-Type': 'application/json', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '48', 'x-pinecone-request-id': '8092058335067574022', 'x-envoy-upstream-service-time': '46', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 384 does not match the dimension of the index 1536","details":[]}
+
+2025-08-08 15:30:37,598 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:30:37,598 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:30:40,405 - INFO - Loading Pinecone index 'legal-chatbot2'...
+2025-08-08 15:30:41,924 - INFO - \u2705 Successfully loaded Pinecone index 'legal-chatbot2'.
+2025-08-08 15:30:46,023 - INFO - \U0001f50d Query: Provide me the judgenment for the murder case
+2025-08-08 15:30:46,031 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:30:46,032 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:30:50,199 - ERROR - \u274c Retrieval failed: (400)
+Reason: Bad Request
+HTTP response headers: HTTPHeaderDict({'Date': 'Fri, 08 Aug 2025 10:00:52 GMT', 'Content-Type': 'application/json', 'Content-Length': '103', 'Connection': 'keep-alive', 'x-pinecone-request-latency-ms': '2', 'x-pinecone-request-id': '78353506256853913', 'x-envoy-upstream-service-time': '1', 'server': 'envoy'})
+HTTP response body: {"code":3,"message":"Vector dimension 384 does not match the dimension of the index 1536","details":[]}
+
+2025-08-08 15:45:01,277 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:45:01,277 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:45:04,732 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 15:45:07,010 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 15:45:11,070 - INFO - \U0001f50d Query: Provide me the judgenment for the murder case
+2025-08-08 15:45:11,077 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:45:11,079 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:45:17,167 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 15:45:17,426 - INFO - \u2705 Similarity (query \u2194 answer): 0.6370
+2025-08-08 15:45:17,426 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8189
+2025-08-08 15:45:17,426 - INFO - \U0001f4ce Sources used:
+2025-08-08 15:45:17,426 - INFO - 1. http://192.168.1.26:8000/pdf_files/18087.pdf — excerpt: conducted.  According to the facts found and the opinion based thereon, the girl was raped and then ...
+2025-08-08 15:45:17,426 - INFO - 2. http://192.168.1.26:8000/pdf_files/12120.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 5 of 19  Importance   and   significance.    The   ...
+2025-08-08 15:45:17,426 - INFO - 3. http://192.168.1.26:8000/pdf_files/12120.pdf — excerpt: no  gaps  whatsoever and the same  conclusively  establishes that the appellants and appellants alon...
+2025-08-08 15:45:17,426 - INFO - 4. http://192.168.1.26:8000/pdf_files/40.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 3 of 10  and injury to the lung,. and as the, docto...
+2025-08-08 15:45:17,426 - INFO - 5. http://192.168.1.26:8000/pdf_files/39813.pdf — excerpt: Page 17 JUDGMENT 17 predilection,  fondness,  inclination,  proclivity  on  any  subject,  however e...
+2025-08-08 15:48:38,481 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:48:38,481 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:48:41,820 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 15:48:42,997 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 15:48:49,092 - INFO - \U0001f50d Query: Provide me the judgenment for the murder case
+2025-08-08 15:48:49,105 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:48:49,107 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:49:04,242 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 15:49:04,594 - INFO - \u2705 Similarity (query \u2194 answer): 0.5814
+2025-08-08 15:49:04,626 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7794
+2025-08-08 15:49:04,626 - INFO - \U0001f4ce Sources used:
+2025-08-08 15:49:04,626 - INFO - 1. http://192.168.1.26:8000/pdf_files/18087.pdf — excerpt: conducted.  According to the facts found and the opinion based thereon, the girl was raped and then ...
+2025-08-08 15:49:04,626 - INFO - 2. http://192.168.1.26:8000/pdf_files/12120.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 5 of 19  Importance   and   significance.    The   ...
+2025-08-08 15:49:04,626 - INFO - 3. http://192.168.1.26:8000/pdf_files/12120.pdf — excerpt: no  gaps  whatsoever and the same  conclusively  establishes that the appellants and appellants alon...
+2025-08-08 15:49:04,626 - INFO - 4. http://192.168.1.26:8000/pdf_files/40.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 3 of 10  and injury to the lung,. and as the, docto...
+2025-08-08 15:49:04,626 - INFO - 5. http://192.168.1.26:8000/pdf_files/39813.pdf — excerpt: Page 17 JUDGMENT 17 predilection,  fondness,  inclination,  proclivity  on  any  subject,  however e...
+2025-08-08 15:50:25,064 - INFO - \U0001f50d Query: Provide me the five judgenment for the for the murder case
+2025-08-08 15:50:25,072 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:50:25,072 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:50:31,489 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 15:50:31,807 - INFO - \u2705 Similarity (query \u2194 answer): 0.1636
+2025-08-08 15:50:31,807 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.0393
+2025-08-08 15:50:31,807 - INFO - \U0001f4ce Sources used:
+2025-08-08 15:50:31,807 - INFO - 1. http://192.168.1.26:8000/pdf_files/39813.pdf — excerpt: murder  and  after  arrest  of  those  accused  persons,  several  undetected  cases  could  be  det...
+2025-08-08 15:50:31,807 - INFO - 2. http://192.168.1.26:8000/pdf_files/36891.pdf — excerpt: counsel for the parties and perused the record.            The case is to be decided keeping in mind...
+2025-08-08 15:50:31,807 - INFO - 3. http://192.168.1.26:8000/pdf_files/12120.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 5 of 19  Importance   and   significance.    The   ...
+2025-08-08 15:50:31,807 - INFO - 4. http://192.168.1.26:8000/pdf_files/18087.pdf — excerpt: conducted.  According to the facts found and the opinion based thereon, the girl was raped and then ...
+2025-08-08 15:50:31,807 - INFO - 5. http://192.168.1.26:8000/pdf_files/39813.pdf — excerpt: Page 17 JUDGMENT 17 predilection,  fondness,  inclination,  proclivity  on  any  subject,  however e...
+2025-08-08 15:50:51,883 - INFO - \U0001f50d Query: Provide me with the five judgments for the murder case
+2025-08-08 15:50:51,898 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:50:51,898 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:51:00,627 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 15:51:00,993 - INFO - \u2705 Similarity (query \u2194 answer): 0.8524
+2025-08-08 15:51:00,993 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6613
+2025-08-08 15:51:00,993 - INFO - \U0001f4ce Sources used:
+2025-08-08 15:51:00,993 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-02-2015_to_28-02-2015/42437.pdf — excerpt: Page 25 JUDGMENT Civil Appeal No.2548 of 2009 final verdict reached by a competent  court  convictin...
+2025-08-08 15:51:00,993 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-04-2025_to_30-04-2025/44210_2019_17_1501_60790_Judgement_07-Apr-2025.pdf — excerpt: peculiarities of the case coupled with the over-arching need to render substantive justice, we feel ...
+2025-08-08 15:51:00,993 - INFO - 3. http://192.168.1.26:8000/pdf_files/39813.pdf — excerpt: Page 17 JUDGMENT 17 predilection,  fondness,  inclination,  proclivity  on  any  subject,  however e...
+2025-08-08 15:51:00,993 - INFO - 4. http://192.168.1.26:8000/pdf_files/28992.pdf — excerpt: 10.     Before dealing with the impugned judgment and the material on  record, we would like to ment...
+2025-08-08 15:51:00,993 - INFO - 5. http://192.168.1.26:8000/pdf_files/40333.pdf — excerpt: Page 12 JUDGMENT ruptured  and bleeding took place internally and serious damage was  caused  to  th...
+2025-08-08 15:51:43,134 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:51:43,134 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:51:46,156 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 15:51:47,352 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 15:51:51,697 - INFO - \U0001f50d Query: Provide me with the five judgments for the murder case
+2025-08-08 15:51:51,707 - INFO - Use pytorch device_name: cpu
+2025-08-08 15:51:51,707 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 15:52:25,836 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 15:52:26,203 - INFO - \u2705 Similarity (query \u2194 answer): 0.6160
+2025-08-08 15:52:26,203 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6282
+2025-08-08 15:52:26,203 - INFO - \U0001f4ce Sources used:
+2025-08-08 15:52:26,203 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-02-2015_to_28-02-2015/42437.pdf — excerpt: Page 25 JUDGMENT Civil Appeal No.2548 of 2009 final verdict reached by a competent  court  convictin...
+2025-08-08 15:52:26,203 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-04-2025_to_30-04-2025/44210_2019_17_1501_60790_Judgement_07-Apr-2025.pdf — excerpt: peculiarities of the case coupled with the over-arching need to render substantive justice, we feel ...
+2025-08-08 15:52:26,203 - INFO - 3. http://192.168.1.26:8000/pdf_files/39813.pdf — excerpt: Page 17 JUDGMENT 17 predilection,  fondness,  inclination,  proclivity  on  any  subject,  however e...
+2025-08-08 15:52:26,203 - INFO - 4. http://192.168.1.26:8000/pdf_files/28992.pdf — excerpt: 10.     Before dealing with the impugned judgment and the material on  record, we would like to ment...
+2025-08-08 15:52:26,203 - INFO - 5. http://192.168.1.26:8000/pdf_files/40333.pdf — excerpt: Page 12 JUDGMENT ruptured  and bleeding took place internally and serious damage was  caused  to  th...
+2025-08-08 16:20:20,697 - INFO - \U0001f50d Query: Provide me the judgenmt for the murder case with full details
+2025-08-08 16:20:20,706 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:20:20,707 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:20:28,000 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:20:28,233 - INFO - \u2705 Similarity (query \u2194 answer): 0.6830
+2025-08-08 16:20:28,233 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.5840
+2025-08-08 16:20:28,233 - INFO - \U0001f4ce Sources used:
+2025-08-08 16:20:28,233 - INFO - 1. http://192.168.1.26:8000/pdf_files/18087.pdf — excerpt: conducted.  According to the facts found and the opinion based thereon, the girl was raped and then ...
+2025-08-08 16:20:28,233 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf — excerpt: 25 in detail by giving cogent reasons and on appreciation of the evidence on  record,  we  are  of  ...
+2025-08-08 16:20:28,233 - INFO - 3. http://192.168.1.26:8000/pdf_files/12120.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 5 of 19  Importance   and   significance.    The   ...
+2025-08-08 16:20:28,233 - INFO - 4. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf — excerpt: evidence  on  record  while  confirming  the  findings  recorded  by  the learned Sessions Court hol...
+2025-08-08 16:20:28,233 - INFO - 5. http://192.168.1.26:8000/pdf_files/26154.pdf — excerpt: is no concrete evidence to show that the accused persons  were the members of the unlawful assembly ...
+2025-08-08 16:20:42,425 - INFO - \U0001f50d Query: Provide me with the judgment for the murder case with full details
+2025-08-08 16:20:42,436 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:20:42,437 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:20:51,634 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:20:51,878 - INFO - \u2705 Similarity (query \u2194 answer): 0.8398
+2025-08-08 16:20:51,880 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6314
+2025-08-08 16:20:51,880 - INFO - \U0001f4ce Sources used:
+2025-08-08 16:20:51,880 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf — excerpt: 25 in detail by giving cogent reasons and on appreciation of the evidence on  record,  we  are  of  ...
+2025-08-08 16:20:51,880 - INFO - 2. http://192.168.1.26:8000/pdf_files/40333.pdf — excerpt: Page 12 JUDGMENT ruptured  and bleeding took place internally and serious damage was  caused  to  th...
+2025-08-08 16:20:51,880 - INFO - 3. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/23720_2008_Judgement_15-Mar-2019.pdf — excerpt: conviction and sentence passed by the learned trial Court dated 30th  November,   2005,   at   least...
+2025-08-08 16:20:51,880 - INFO - 4. http://192.168.1.26:8000/pdf_files/18087.pdf — excerpt: conducted.  According to the facts found and the opinion based thereon, the girl was raped and then ...
+2025-08-08 16:20:51,880 - INFO - 5. http://192.168.1.26:8000/pdf_sc/01-04-2025_to_30-04-2025/44210_2019_17_1501_60790_Judgement_07-Apr-2025.pdf — excerpt: peculiarities of the case coupled with the over-arching need to render substantive justice, we feel ...
+2025-08-08 16:21:19,122 - INFO - \U0001f50d Query: Provide me with the top  5 judgment for the murder case with full details
+2025-08-08 16:21:19,143 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:21:19,143 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:21:57,598 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:21:57,848 - INFO - \u2705 Similarity (query \u2194 answer): 0.6238
+2025-08-08 16:21:57,848 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7091
+2025-08-08 16:21:57,848 - INFO - \U0001f4ce Sources used:
+2025-08-08 16:21:57,848 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf — excerpt: evidence  on  record  while  confirming  the  findings  recorded  by  the learned Sessions Court hol...
+2025-08-08 16:21:57,848 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf — excerpt: 25 in detail by giving cogent reasons and on appreciation of the evidence on  record,  we  are  of  ...
+2025-08-08 16:21:57,848 - INFO - 3. http://192.168.1.26:8000/pdf_files/39813.pdf — excerpt: Page 17 JUDGMENT 17 predilection,  fondness,  inclination,  proclivity  on  any  subject,  however e...
+2025-08-08 16:21:57,848 - INFO - 4. http://192.168.1.26:8000/pdf_files/39813.pdf — excerpt: Page 5 JUDGMENT 5 7. The prosecution examined 15 witnesses to prove the case  against the accused pe...
+2025-08-08 16:21:57,848 - INFO - 5. http://192.168.1.26:8000/pdf_files/28992.pdf — excerpt: 10.     Before dealing with the impugned judgment and the material on  record, we would like to ment...
+2025-08-08 16:23:08,079 - INFO - \U0001f50d Query: Provide me with the top  5 judgments for the murder case with full details
+2025-08-08 16:23:08,102 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:23:08,102 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:23:47,830 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:23:48,161 - INFO - \u2705 Similarity (query \u2194 answer): 0.4804
+2025-08-08 16:23:48,161 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6761
+2025-08-08 16:23:48,161 - INFO - \U0001f4ce Sources used:
+2025-08-08 16:23:48,161 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf — excerpt: evidence  on  record  while  confirming  the  findings  recorded  by  the learned Sessions Court hol...
+2025-08-08 16:23:48,161 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf — excerpt: 25 in detail by giving cogent reasons and on appreciation of the evidence on  record,  we  are  of  ...
+2025-08-08 16:23:48,161 - INFO - 3. http://192.168.1.26:8000/pdf_files/28992.pdf — excerpt: 10.     Before dealing with the impugned judgment and the material on  record, we would like to ment...
+2025-08-08 16:23:48,161 - INFO - 4. http://192.168.1.26:8000/pdf_files/39813.pdf — excerpt: Page 17 JUDGMENT 17 predilection,  fondness,  inclination,  proclivity  on  any  subject,  however e...
+2025-08-08 16:23:48,161 - INFO - 5. http://192.168.1.26:8000/pdf_sc/01-11-2019_to_30-11-2019/18059_2012_13_1501_17963_Judgement_07-Nov-2019.pdf — excerpt: basis, that the High Court has taken a view that the accused  deserve to be acquitted.  34. PWs 1, 2...
+2025-08-08 16:26:27,741 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:26:27,741 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:26:30,949 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 16:26:32,050 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 16:27:02,376 - INFO - \U0001f50d Query: latest cheque dishonour judgements
+2025-08-08 16:27:02,388 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:27:02,388 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:27:06,001 - ERROR - \u274c Retrieval failed: No module named 'src.components.retriever'
+2025-08-08 16:27:24,491 - INFO - \U0001f50d Query: latest 138 Ni act cases
+
+2025-08-08 16:27:24,507 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:27:24,508 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:27:27,305 - ERROR - \u274c Retrieval failed: No module named 'src.components.retriever'
+2025-08-08 16:28:05,701 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:28:05,701 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:28:09,359 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 16:28:10,380 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 16:28:15,272 - INFO - \U0001f50d Query: latest 138 Ni act cases
+2025-08-08 16:28:15,285 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:28:15,285 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:28:20,500 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:28:20,712 - INFO - \u2705 Similarity (query \u2194 answer): 0.0822
+2025-08-08 16:28:20,712 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.0990
+2025-08-08 16:28:20,712 - INFO - \U0001f4ce Sources used:
+2025-08-08 16:28:20,712 - INFO - 1. http://192.168.1.26:8000/pdf_files/18626.pdf — excerpt: v. Nihal Chand and another (AIR 1938 PC 195), to conclude that there was no presumption about proper...
+2025-08-08 16:28:20,712 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-08-2022_to_31-08-2022/15522_2022_1_1501_37390_Judgement_18-Aug-2022.pdf — excerpt: of the record cannot be defined precisely or exhaustively, there being an element of indefiniteness ...
+2025-08-08 16:28:20,712 - INFO - 3. http://192.168.1.26:8000/pdf_sc/01-08-2020_to_31-08-2020/24960_2009_31_1502_23467_Judgement_19-Aug-2020.pdf — excerpt: 2                J U D G M E N T V. Ramasubramanian,J. Introduction 1. All   the   appeals   on   ha...
+2025-08-08 16:28:20,712 - INFO - 4. http://192.168.1.26:8000/pdf_sc/01-01-2018_to_31-01-2018/16693_2016_Judgement_25-Jan-2018.pdf — excerpt: (Arising out of S.L.P.(C)……… D.No. 13792 of 2017 CIVIL APPEAL NO.1189 OF 2018 Arising out of S.L.P.(...
+2025-08-08 16:28:20,712 - INFO - 5. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 10 of 13  re.  investigation as might be called for...
+2025-08-08 16:29:35,528 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:29:35,529 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:29:38,346 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 16:29:39,395 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 16:29:49,000 - INFO - \U0001f50d Query: latest 138 Ni act cases
+2025-08-08 16:29:49,012 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:29:49,012 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:30:17,463 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:30:17,724 - INFO - \u2705 Similarity (query \u2194 answer): 0.5626
+2025-08-08 16:30:17,725 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6472
+2025-08-08 16:30:17,725 - INFO - \U0001f4ce Sources used:
+2025-08-08 16:30:17,725 - INFO - 1. http://192.168.1.26:8000/pdf_files/18626.pdf — excerpt: v. Nihal Chand and another (AIR 1938 PC 195), to conclude that there was no presumption about proper...
+2025-08-08 16:30:17,725 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-08-2022_to_31-08-2022/15522_2022_1_1501_37390_Judgement_18-Aug-2022.pdf — excerpt: of the record cannot be defined precisely or exhaustively, there being an element of indefiniteness ...
+2025-08-08 16:30:17,725 - INFO - 3. http://192.168.1.26:8000/pdf_sc/01-08-2020_to_31-08-2020/24960_2009_31_1502_23467_Judgement_19-Aug-2020.pdf — excerpt: 2                J U D G M E N T V. Ramasubramanian,J. Introduction 1. All   the   appeals   on   ha...
+2025-08-08 16:30:17,725 - INFO - 4. http://192.168.1.26:8000/pdf_sc/01-01-2018_to_31-01-2018/16693_2016_Judgement_25-Jan-2018.pdf — excerpt: (Arising out of S.L.P.(C)……… D.No. 13792 of 2017 CIVIL APPEAL NO.1189 OF 2018 Arising out of S.L.P.(...
+2025-08-08 16:30:17,725 - INFO - 5. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 10 of 13  re.  investigation as might be called for...
+2025-08-08 16:30:21,017 - INFO - \U0001f50d Query: latest 138 Ni act cases
+2025-08-08 16:30:21,033 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:30:21,035 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:30:43,212 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:30:43,465 - INFO - \u2705 Similarity (query \u2194 answer): 0.5295
+2025-08-08 16:30:43,465 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6327
+2025-08-08 16:30:43,465 - INFO - \U0001f4ce Sources used:
+2025-08-08 16:30:43,465 - INFO - 1. http://192.168.1.26:8000/pdf_files/18626.pdf — excerpt: v. Nihal Chand and another (AIR 1938 PC 195), to conclude that there was no presumption about proper...
+2025-08-08 16:30:43,465 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-08-2022_to_31-08-2022/15522_2022_1_1501_37390_Judgement_18-Aug-2022.pdf — excerpt: of the record cannot be defined precisely or exhaustively, there being an element of indefiniteness ...
+2025-08-08 16:30:43,465 - INFO - 3. http://192.168.1.26:8000/pdf_sc/01-08-2020_to_31-08-2020/24960_2009_31_1502_23467_Judgement_19-Aug-2020.pdf — excerpt: 2                J U D G M E N T V. Ramasubramanian,J. Introduction 1. All   the   appeals   on   ha...
+2025-08-08 16:30:43,465 - INFO - 4. http://192.168.1.26:8000/pdf_sc/01-01-2018_to_31-01-2018/16693_2016_Judgement_25-Jan-2018.pdf — excerpt: (Arising out of S.L.P.(C)……… D.No. 13792 of 2017 CIVIL APPEAL NO.1189 OF 2018 Arising out of S.L.P.(...
+2025-08-08 16:30:43,465 - INFO - 5. http://192.168.1.26:8000/pdf_files/91.pdf — excerpt: http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 10 of 13  re.  investigation as might be called for...
+2025-08-08 16:39:12,939 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:39:12,939 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:39:16,235 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 16:39:17,250 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 16:39:25,493 - INFO - \U0001f50d Query: latest 138 Ni act cases
+2025-08-08 16:39:25,505 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:39:25,505 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:40:02,748 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:40:02,991 - INFO - \u2705 Similarity (query \u2194 answer): 0.6459
+2025-08-08 16:40:02,991 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6772
+2025-08-08 16:40:02,991 - INFO - \U0001f4ce Sources used:
+2025-08-08 16:40:02,991 - INFO - 1. http://192.168.1.26:8000/pdf_files/18626.pdf (Page N/A) — v. Nihal Chand and another (AIR 1938 PC 195), to conclude that there was no presumption about proper...
+2025-08-08 16:40:02,991 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-08-2022_to_31-08-2022/15522_2022_1_1501_37390_Judgement_18-Aug-2022.pdf (Page N/A) — of the record cannot be defined precisely or exhaustively, there being an element of indefiniteness ...
+2025-08-08 16:40:02,991 - INFO - 3. http://192.168.1.26:8000/pdf_sc/01-08-2020_to_31-08-2020/24960_2009_31_1502_23467_Judgement_19-Aug-2020.pdf (Page N/A) — 2                J U D G M E N T V. Ramasubramanian,J. Introduction 1. All   the   appeals   on   ha...
+2025-08-08 16:40:02,992 - INFO - 4. http://192.168.1.26:8000/pdf_sc/01-01-2018_to_31-01-2018/16693_2016_Judgement_25-Jan-2018.pdf (Page N/A) — (Arising out of S.L.P.(C)……… D.No. 13792 of 2017 CIVIL APPEAL NO.1189 OF 2018 Arising out of S.L.P.(...
+2025-08-08 16:40:02,992 - INFO - 5. http://192.168.1.26:8000/pdf_files/91.pdf (Page N/A) — http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 10 of 13  re.  investigation as might be called for...
+2025-08-08 16:43:46,455 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:43:46,455 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:43:49,995 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 16:43:51,820 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 16:43:52,117 - INFO - \U0001f50d Query: Provide me the judgenments for the murder case 
+2025-08-08 16:43:52,138 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:43:52,138 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:44:29,619 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:44:29,861 - INFO - \u2705 Similarity (query \u2194 answer): 0.6362
+2025-08-08 16:44:29,861 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7382
+2025-08-08 16:44:29,861 - INFO - \U0001f4ce Sources used:
+2025-08-08 16:44:29,861 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — 25 in detail by giving cogent reasons and on appreciation of the evidence on  record,  we  are  of  ...
+2025-08-08 16:44:29,861 - INFO - 2. http://192.168.1.26:8000/pdf_files/18087.pdf (Page N/A) — conducted.  According to the facts found and the opinion based thereon, the girl was raped and then ...
+2025-08-08 16:44:29,861 - INFO - 3. http://192.168.1.26:8000/pdf_files/37082.pdf (Page N/A) — any certificate from a doctor that the deceased was in a  fit state to make a statement.  The statem...
+2025-08-08 16:44:29,861 - INFO - 4. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — evidence  on  record  while  confirming  the  findings  recorded  by  the learned Sessions Court hol...
+2025-08-08 16:44:29,861 - INFO - 5. http://192.168.1.26:8000/pdf_files/25824.pdf (Page N/A) — the test and the shocking nature of crime or number of murders committed  is also not the criterion ...
+2025-08-08 16:48:32,976 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:48:32,976 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:48:35,828 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 16:48:36,738 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 16:48:36,770 - INFO - \U0001f50d Query: Provide me the judgenments for the murder case 
+2025-08-08 16:48:36,785 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:48:36,785 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:49:09,561 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:49:09,803 - INFO - \u2705 Similarity (query \u2194 answer): 0.6031
+2025-08-08 16:49:09,803 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7013
+2025-08-08 16:49:09,805 - INFO - \U0001f4ce Sources used:
+2025-08-08 16:49:09,805 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — 25 in detail by giving cogent reasons and on appreciation of the evidence on  record,  we  are  of  ...
+2025-08-08 16:49:09,805 - INFO - 2. http://192.168.1.26:8000/pdf_files/18087.pdf (Page N/A) — conducted.  According to the facts found and the opinion based thereon, the girl was raped and then ...
+2025-08-08 16:49:09,805 - INFO - 3. http://192.168.1.26:8000/pdf_files/37082.pdf (Page N/A) — any certificate from a doctor that the deceased was in a  fit state to make a statement.  The statem...
+2025-08-08 16:49:09,805 - INFO - 4. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — evidence  on  record  while  confirming  the  findings  recorded  by  the learned Sessions Court hol...
+2025-08-08 16:49:09,805 - INFO - 5. http://192.168.1.26:8000/pdf_files/25824.pdf (Page N/A) — the test and the shocking nature of crime or number of murders committed  is also not the criterion ...
+2025-08-08 16:53:13,704 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:53:13,704 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:53:17,145 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 16:53:18,512 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 16:53:23,016 - INFO - \U0001f50d Incoming query: Provide me the judgenments for the murder case 
+2025-08-08 16:53:23,037 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:53:23,038 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:53:31,831 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:53:32,031 - INFO - \u2705 Similarity: 0.7248, Faithfulness: 0.6513
+2025-08-08 16:53:32,031 - INFO - \U0001f4da Sources used:
+2025-08-08 16:53:32,031 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — 25 in detail by giving cogent reasons and on appreciation of the evidence on  re...
+2025-08-08 16:53:32,031 - INFO - 2. http://192.168.1.26:8000/pdf_files/18087.pdf (Page N/A) — conducted.  According to the facts found and the opinion based thereon, the girl...
+2025-08-08 16:53:32,031 - INFO - 3. http://192.168.1.26:8000/pdf_files/37082.pdf (Page N/A) — any certificate from a doctor that the deceased was in a  fit state to make a st...
+2025-08-08 16:53:32,031 - INFO - 4. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — evidence  on  record  while  confirming  the  findings  recorded  by  the learne...
+2025-08-08 16:53:32,031 - INFO - 5. http://192.168.1.26:8000/pdf_files/25824.pdf (Page N/A) — the test and the shocking nature of crime or number of murders committed  is als...
+2025-08-08 16:55:27,959 - INFO - \U0001f50d Incoming query: 138 Ni act cases
+
+2025-08-08 16:55:27,985 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:55:27,985 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:55:34,127 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:55:34,355 - INFO - \u2705 Similarity: 0.9221, Faithfulness: 0.6837
+2025-08-08 16:55:34,355 - INFO - \U0001f4da Sources used:
+2025-08-08 16:55:34,355 - INFO - 1. http://192.168.1.26:8000/pdf_files/18626.pdf (Page N/A) — v. Nihal Chand and another (AIR 1938 PC 195), to conclude that there was no pres...
+2025-08-08 16:55:34,355 - INFO - 2. http://192.168.1.26:8000/pdf_files/77.pdf (Page N/A) — That  was  a  case  under the  Excise  Act  and  the  Excise Commissioner  was c...
+2025-08-08 16:55:34,355 - INFO - 3. http://192.168.1.26:8000/pdf_sc/01-08-2020_to_31-08-2020/24960_2009_31_1502_23467_Judgement_19-Aug-2020.pdf (Page N/A) — 2                J U D G M E N T V. Ramasubramanian,J. Introduction 1. All   the...
+2025-08-08 16:55:34,355 - INFO - 4. http://192.168.1.26:8000/pdf_files/7534.pdf (Page N/A) — tion  under Section 123(4) of the Act. The only question  is whether the stateme...
+2025-08-08 16:55:34,355 - INFO - 5. http://192.168.1.26:8000/pdf_sc/01-07-2024_to_31-07-2024/24976_2023_1_1503_53546_Judgement_09-Jul-2024.pdf (Page N/A) — Civil Appeal No. 6741 of 2024     Page 21 of 83  11. In the cases before us the ...
+2025-08-08 16:57:41,106 - INFO - \U0001f50d Incoming query: grounds for divorce
+2025-08-08 16:57:41,131 - INFO - Use pytorch device_name: cpu
+2025-08-08 16:57:41,131 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 16:57:49,624 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 16:57:49,840 - INFO - \u2705 Similarity: 0.6436, Faithfulness: 0.6445
+2025-08-08 16:57:49,840 - INFO - \U0001f4da Sources used:
+2025-08-08 16:57:49,840 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-07-2025_to_2025-07-25 (Page N/A) — privacy is permitted to be raised, it will impinge upon the right to  fair trial...
+2025-08-08 16:57:49,840 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-10-2018_to_31-10-2018/29022_2018_Judgement_26-Oct-2018.pdf (Page N/A) — named in the reply.  It was also alleged that she was caught red-handed, but on ...
+2025-08-08 16:57:49,840 - INFO - 3. http://192.168.1.26:8000/pdf_sc/01-10-2018_to_31-10-2018/29022_2018_Judgement_26-Oct-2018.pdf (Page N/A) — noticing  the  submission  made  on  behalf  of  the  appellant  that  the condi...
+2025-08-08 16:57:49,840 - INFO - 4. http://192.168.1.26:8000/pdf_sc/01-07-2025_to_2025-07-25 (Page N/A) — Page 15 of 66        5.1   It was submitted that as per the exception contained ...
+2025-08-08 16:57:49,840 - INFO - 5. http://192.168.1.26:8000/pdf_sc/01-10-2018_to_31-10-2018/29022_2018_Judgement_26-Oct-2018.pdf (Page N/A) — respondent Nos.2 & 3, who are of a tender age, and that at the time of the divor...
+2025-08-08 17:00:35,393 - INFO - \U0001f50d Incoming query: judgements on quashing rape cases
+2025-08-08 17:00:35,416 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:00:35,416 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:00:41,383 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 17:00:41,566 - INFO - \u2705 Similarity: 0.7911, Faithfulness: 0.6599
+2025-08-08 17:00:41,566 - INFO - \U0001f4da Sources used:
+2025-08-08 17:00:41,566 - INFO - 1. http://192.168.1.26:8000/pdf_files/29954.pdf (Page N/A) — destroys the physical frame of a victim, a  rapist degrades and defiles the soul...
+2025-08-08 17:00:41,566 - INFO - 2. http://192.168.1.26:8000/pdf_sc/01-03-2000_to_31-03-2000/16451.pdf (Page N/A) — http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 6 of 7  violation of human dign...
+2025-08-08 17:00:41,566 - INFO - 3. http://192.168.1.26:8000/pdf_sc/01-03-2000_to_31-03-2000/16451.pdf (Page N/A) — 230, while dealing with a case of reduction of sentence from 10  years  R.I.  to...
+2025-08-08 17:00:41,566 - INFO - 4. http://192.168.1.26:8000/pdf_sc/01-03-2000_to_31-03-2000/16451.pdf (Page N/A) — must  not  only keep in view the rights of the criminal  but also  the  rights o...
+2025-08-08 17:00:41,566 - INFO - 5. http://192.168.1.26:8000/pdf_sc/01-03-2000_to_31-03-2000/16451.pdf (Page N/A) — cases  need to be dealt with sternly and severely.   Dealing with  the offence o...
+2025-08-08 17:29:53,804 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:29:53,804 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:29:57,459 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 17:29:58,804 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 17:30:17,799 - INFO - \U0001f50d Incoming query: Provide me the judgenmts for the murder cases
+2025-08-08 17:30:17,817 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:30:17,817 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:30:24,842 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 17:30:25,061 - INFO - \u2705 Similarity: 0.7497, Faithfulness: 0.7264
+2025-08-08 17:30:25,062 - INFO - \U0001f4da Sources used:
+2025-08-08 17:30:25,062 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — 25 in detail by giving cogent reasons and on appreciation of the evidence on  re...
+2025-08-08 17:30:25,062 - INFO - 2. http://192.168.1.26:8000/pdf_files/39813.pdf (Page N/A) — murder  and  after  arrest  of  those  accused  persons,  several  undetected  c...
+2025-08-08 17:30:25,062 - INFO - 3. http://192.168.1.26:8000/pdf_files/37082.pdf (Page N/A) — any certificate from a doctor that the deceased was in a  fit state to make a st...
+2025-08-08 17:30:25,062 - INFO - 4. http://192.168.1.26:8000/pdf_files/12120.pdf (Page N/A) — no  gaps  whatsoever and the same  conclusively  establishes that the appellants...
+2025-08-08 17:30:25,062 - INFO - 5. http://192.168.1.26:8000/pdf_files/18087.pdf (Page N/A) — conducted.  According to the facts found and the opinion based thereon, the girl...
+2025-08-08 17:34:23,112 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:34:23,112 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:34:26,300 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 17:34:27,378 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 17:34:45,207 - INFO - \U0001f50d Incoming query: Provide me the judgenment for drunk and drive case
+2025-08-08 17:34:45,227 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:34:45,227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:34:50,668 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 17:34:50,906 - INFO - \u2705 Similarity: 0.7425, Faithfulness: 0.5696
+2025-08-08 17:34:50,906 - INFO - \U0001f4da Sources used:
+2025-08-08 17:34:50,906 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2000_to_31-03-2000/16451.pdf (Page N/A) — without  taking  into consideration the relevant factors  or when  the  discreti...
+2025-08-08 17:34:50,906 - INFO - 2. http://192.168.1.26:8000/pdf_files/20836.pdf (Page N/A) — read with section 21 of the NDPS Act and awarded on each appellant the sentence ...
+2025-08-08 17:34:50,906 - INFO - 3. http://192.168.1.26:8000/pdf_sc/01-04-2025_to_30-04-2025/44210_2019_17_1501_60790_Judgement_07-Apr-2025.pdf (Page N/A) — 22. In fact, respondent no.2 had given a statement to the police to the effect t...
+2025-08-08 17:34:50,906 - INFO - 4. http://192.168.1.26:8000/pdf_files/12728.pdf (Page N/A) — charge  that  his action in carrying 12  bottles  of  liquor while  proceeding o...
+2025-08-08 17:34:50,906 - INFO - 5. http://192.168.1.26:8000/pdf_sc/01-03-2000_to_31-03-2000/16451.pdf (Page N/A) — http://JUDIS.NIC.IN  SUPREME COURT OF INDIA Page 4 of 7  committed various offen...
+2025-08-08 17:37:11,567 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:37:11,567 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:37:14,340 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 17:37:15,504 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 17:37:31,293 - INFO - \U0001f50d Incoming query: Provide me the judgenmt for the murder cases
+2025-08-08 17:37:31,312 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:37:31,312 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:37:39,446 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 17:37:39,648 - INFO - \u2705 Similarity: 0.6458, Faithfulness: 0.6986
+2025-08-08 17:37:39,648 - INFO - \U0001f4da Sources used:
+2025-08-08 17:37:39,648 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — 25 in detail by giving cogent reasons and on appreciation of the evidence on  re...
+2025-08-08 17:37:39,648 - INFO - 2. http://192.168.1.26:8000/pdf_files/37082.pdf (Page N/A) — any certificate from a doctor that the deceased was in a  fit state to make a st...
+2025-08-08 17:37:39,648 - INFO - 3. http://192.168.1.26:8000/pdf_files/39813.pdf (Page N/A) — murder  and  after  arrest  of  those  accused  persons,  several  undetected  c...
+2025-08-08 17:37:39,648 - INFO - 4. http://192.168.1.26:8000/pdf_files/18087.pdf (Page N/A) — conducted.  According to the facts found and the opinion based thereon, the girl...
+2025-08-08 17:37:39,648 - INFO - 5. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — evidence  on  record  while  confirming  the  findings  recorded  by  the learne...
+2025-08-08 17:39:58,486 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:39:58,486 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:40:01,253 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 17:40:02,374 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 17:40:17,197 - INFO - \U0001f50d Incoming query: Provide me the judgenment for the murder cases
+2025-08-08 17:40:17,215 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:40:17,215 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:40:24,975 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 17:40:25,193 - INFO - \u2705 Similarity: 0.7329, Faithfulness: 0.7028
+2025-08-08 17:40:25,193 - INFO - \U0001f4da Sources used:
+2025-08-08 17:40:25,193 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — 25 in detail by giving cogent reasons and on appreciation of the evidence on  re...
+2025-08-08 17:40:25,193 - INFO - 2. http://192.168.1.26:8000/pdf_files/37082.pdf (Page N/A) — any certificate from a doctor that the deceased was in a  fit state to make a st...
+2025-08-08 17:40:25,193 - INFO - 3. http://192.168.1.26:8000/pdf_files/25824.pdf (Page N/A) — the test and the shocking nature of crime or number of murders committed  is als...
+2025-08-08 17:40:25,193 - INFO - 4. http://192.168.1.26:8000/pdf_files/39813.pdf (Page N/A) — murder  and  after  arrest  of  those  accused  persons,  several  undetected  c...
+2025-08-08 17:40:25,193 - INFO - 5. http://192.168.1.26:8000/pdf_files/37585.pdf (Page N/A) — 31. Practically, the whole law on death sentence was  referred to in Santosh Kum...
+2025-08-08 17:44:45,347 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:44:45,347 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:44:48,165 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 17:44:49,099 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 17:44:53,207 - INFO - \U0001f50d Incoming query: Provide me the judgenment for the murder cases
+2025-08-08 17:44:53,227 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:44:53,227 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:45:00,531 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 17:45:00,736 - INFO - \u2705 Similarity: 0.7403, Faithfulness: 0.7151
+2025-08-08 17:45:00,736 - INFO - \U0001f4da Sources used:
+2025-08-08 17:45:00,736 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — 25 in detail by giving cogent reasons and on appreciation of the evidence on  re...
+2025-08-08 17:45:00,736 - INFO - 2. http://192.168.1.26:8000/pdf_files/37082.pdf (Page N/A) — any certificate from a doctor that the deceased was in a  fit state to make a st...
+2025-08-08 17:45:00,736 - INFO - 3. http://192.168.1.26:8000/pdf_files/25824.pdf (Page N/A) — the test and the shocking nature of crime or number of murders committed  is als...
+2025-08-08 17:45:00,736 - INFO - 4. http://192.168.1.26:8000/pdf_files/39813.pdf (Page N/A) — murder  and  after  arrest  of  those  accused  persons,  several  undetected  c...
+2025-08-08 17:45:00,736 - INFO - 5. http://192.168.1.26:8000/pdf_files/37585.pdf (Page N/A) — 31. Practically, the whole law on death sentence was  referred to in Santosh Kum...
+2025-08-08 17:49:02,272 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:49:02,272 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:49:06,021 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 17:49:07,108 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 17:49:11,192 - INFO - \U0001f50d Incoming query: Provide me the judgenment for the murder cases
+2025-08-08 17:49:11,210 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:49:11,210 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:49:17,122 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 17:49:17,338 - INFO - \u2705 Similarity: 0.7581, Faithfulness: 0.6544
+2025-08-08 17:49:17,338 - INFO - \U0001f4da Sources used:
+2025-08-08 17:49:17,338 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — 25 in detail by giving cogent reasons and on appreciation of the evidence on  re...
+2025-08-08 17:49:17,338 - INFO - 2. http://192.168.1.26:8000/pdf_files/37082.pdf (Page N/A) — any certificate from a doctor that the deceased was in a  fit state to make a st...
+2025-08-08 17:49:17,338 - INFO - 3. http://192.168.1.26:8000/pdf_files/25824.pdf (Page N/A) — the test and the shocking nature of crime or number of murders committed  is als...
+2025-08-08 17:49:17,338 - INFO - 4. http://192.168.1.26:8000/pdf_files/39813.pdf (Page N/A) — murder  and  after  arrest  of  those  accused  persons,  several  undetected  c...
+2025-08-08 17:49:17,338 - INFO - 5. http://192.168.1.26:8000/pdf_files/37585.pdf (Page N/A) — 31. Practically, the whole law on death sentence was  referred to in Santosh Kum...
+2025-08-08 17:55:03,524 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:55:03,524 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:55:06,304 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 17:55:07,521 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 17:55:11,353 - INFO - \U0001f50d Query: Provide me the judgenment for the murder cases
+2025-08-08 17:55:11,373 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:55:11,373 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:55:18,242 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 17:55:18,448 - INFO - \u2705 Similarity (query \u2194 answer): 0.7406
+2025-08-08 17:55:18,448 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7061
+2025-08-08 17:55:18,450 - INFO - \U0001f4ce Sources used:
+2025-08-08 17:55:18,450 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — 25 in detail by giving cogent reasons and on appreciation of the evidence on  record,  we  are  of  ...
+2025-08-08 17:55:18,450 - INFO - 2. http://192.168.1.26:8000/pdf_files/37082.pdf (Page N/A) — any certificate from a doctor that the deceased was in a  fit state to make a statement.  The statem...
+2025-08-08 17:55:18,450 - INFO - 3. http://192.168.1.26:8000/pdf_files/25824.pdf (Page N/A) — the test and the shocking nature of crime or number of murders committed  is also not the criterion ...
+2025-08-08 17:55:18,450 - INFO - 4. http://192.168.1.26:8000/pdf_files/39813.pdf (Page N/A) — murder  and  after  arrest  of  those  accused  persons,  several  undetected  cases  could  be  det...
+2025-08-08 17:55:18,450 - INFO - 5. http://192.168.1.26:8000/pdf_files/37585.pdf (Page N/A) — 31. Practically, the whole law on death sentence was  referred to in Santosh Kumar’s case.  In parag...
+2025-08-08 17:56:01,558 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:56:01,558 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:56:04,371 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 17:56:05,594 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 17:56:11,377 - INFO - \U0001f50d Query: Provide me the judgenment for the murder cases
+2025-08-08 17:56:11,396 - INFO - Use pytorch device_name: cpu
+2025-08-08 17:56:11,396 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 17:56:16,874 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 17:56:17,075 - INFO - \u2705 Similarity (query \u2194 answer): 0.7096
+2025-08-08 17:56:17,075 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6745
+2025-08-08 17:56:17,075 - INFO - \U0001f4ce Sources used:
+2025-08-08 17:56:17,075 - INFO - 1. http://192.168.1.26:8000/pdf_sc/01-03-2019_to_31-03-2019/18700_2014_Judgement_05-Mar-2019.pdf (Page N/A) — 25 in detail by giving cogent reasons and on appreciation of the evidence on  record,  we  are  of  ...
+2025-08-08 17:56:17,075 - INFO - 2. http://192.168.1.26:8000/pdf_files/37082.pdf (Page N/A) — any certificate from a doctor that the deceased was in a  fit state to make a statement.  The statem...
+2025-08-08 17:56:17,075 - INFO - 3. http://192.168.1.26:8000/pdf_files/25824.pdf (Page N/A) — the test and the shocking nature of crime or number of murders committed  is also not the criterion ...
+2025-08-08 17:56:17,075 - INFO - 4. http://192.168.1.26:8000/pdf_files/39813.pdf (Page N/A) — murder  and  after  arrest  of  those  accused  persons,  several  undetected  cases  could  be  det...
+2025-08-08 17:56:17,075 - INFO - 5. http://192.168.1.26:8000/pdf_files/37585.pdf (Page N/A) — 31. Practically, the whole law on death sentence was  referred to in Santosh Kumar’s case.  In parag...
+2025-08-08 18:03:08,935 - INFO - Use pytorch device_name: cpu
+2025-08-08 18:03:08,935 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 18:03:12,056 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 18:03:13,202 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 18:03:17,274 - INFO - \U0001f50d Query: Provide me the judgenment for the murder cases
+2025-08-08 18:03:17,293 - INFO - Use pytorch device_name: cpu
+2025-08-08 18:03:17,294 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 18:03:23,795 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 18:03:24,009 - INFO - \u2705 Similarity: 0.7899, Faithfulness: 0.6864
+2025-08-08 18:04:29,136 - INFO - \U0001f50d Query: Khushwinder Singh 
+Versus
+State of Punjab
+2025-08-08 18:04:29,170 - INFO - Use pytorch device_name: cpu
+2025-08-08 18:04:29,170 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 18:04:34,977 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 18:04:35,210 - INFO - \u2705 Similarity: 0.0511, Faithfulness: 0.1338
+2025-08-08 18:05:03,281 - INFO - \U0001f50d Query: Provide me the judgenment for the murder case
+2025-08-08 18:05:03,320 - INFO - Use pytorch device_name: cpu
+2025-08-08 18:05:03,320 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 18:05:26,696 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 18:05:26,974 - INFO - \u2705 Similarity: 0.6760, Faithfulness: 0.8531
+2025-08-08 18:06:47,023 - INFO - Use pytorch device_name: cpu
+2025-08-08 18:06:47,023 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 18:06:50,203 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 18:06:51,320 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 18:06:51,357 - INFO - \U0001f50d Query: Provide me the judgenment for the murder case
+2025-08-08 18:06:51,381 - INFO - Use pytorch device_name: cpu
+2025-08-08 18:06:51,381 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 18:07:08,006 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 18:07:08,282 - INFO - \u2705 Similarity: 0.6160, Faithfulness: 0.8060
+2025-08-08 19:21:58,309 - INFO - \U0001f50d Query: Provide me the judgenmet of the murder cases
+2025-08-08 19:21:58,334 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:21:58,334 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:22:05,156 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:22:05,389 - INFO - \u2705 Similarity: 0.7565, Faithfulness: 0.7106
+2025-08-08 19:22:19,838 - INFO - \U0001f50d Query: Provide me with the judgenmet of the murder cases
+2025-08-08 19:22:19,864 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:22:19,864 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:22:25,551 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:22:25,770 - INFO - \u2705 Similarity: 0.7720, Faithfulness: 0.7272
+2025-08-08 19:29:00,082 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:29:00,082 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:29:03,271 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 19:29:04,576 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 19:29:08,609 - INFO - \U0001f50d Query: Provide me with the judgenmet of the murder cases
+2025-08-08 19:29:08,632 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:29:08,633 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:29:17,187 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:29:17,427 - INFO - \u2705 Similarity (query \u2194 answer): 0.7157
+2025-08-08 19:29:17,427 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7068
+2025-08-08 19:30:02,741 - INFO - \U0001f50d Query: create a rent aggregnment for me
+2025-08-08 19:30:02,781 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:30:02,782 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:30:09,104 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:30:09,352 - INFO - \u2705 Similarity (query \u2194 answer): 0.7136
+2025-08-08 19:30:09,352 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6353
+2025-08-08 19:31:05,259 - INFO - \U0001f50d Query: Provide me the jugnment for the drunk and drive case
+2025-08-08 19:31:05,283 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:31:05,283 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:31:12,021 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:31:12,250 - INFO - \u2705 Similarity (query \u2194 answer): 0.6157
+2025-08-08 19:31:12,250 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6131
+2025-08-08 19:34:41,110 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:34:41,110 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:34:44,757 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 19:34:46,070 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 19:34:50,122 - INFO - \U0001f50d Query: Provide me the jugnment for the drunk and drive case
+2025-08-08 19:34:50,152 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:34:50,152 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:34:56,678 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:34:56,892 - INFO - \u2705 Similarity (query \u2194 answer): 0.1674
+2025-08-08 19:34:56,892 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.2989
+2025-08-08 19:35:58,636 - INFO - \U0001f50d Query: what is rarest of rare
+2025-08-08 19:35:58,681 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:35:58,681 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:36:14,106 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:36:14,356 - INFO - \u2705 Similarity (query \u2194 answer): 0.6180
+2025-08-08 19:36:14,356 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8284
+2025-08-08 19:39:29,496 - INFO - \U0001f50d Query: what is rarest of rare
+2025-08-08 19:39:29,544 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:39:29,544 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:39:42,017 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:39:42,351 - INFO - \u2705 Similarity (query \u2194 answer): 0.5928
+2025-08-08 19:39:42,353 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8407
+2025-08-08 19:40:25,132 - INFO - \U0001f50d Query: what is rarest of rare
+2025-08-08 19:40:25,188 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:40:25,188 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:40:37,216 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:40:37,541 - INFO - \u2705 Similarity (query \u2194 answer): 0.6653
+2025-08-08 19:40:37,541 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8433
+2025-08-08 19:40:52,422 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:41:02,553 - INFO - \U0001f50d Query: what is rarest of rare
+2025-08-08 19:41:02,620 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:41:02,620 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:41:12,848 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:41:13,176 - INFO - \u2705 Similarity (query \u2194 answer): 0.5715
+2025-08-08 19:41:13,176 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8385
+2025-08-08 19:42:23,511 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:42:23,511 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:42:27,516 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 19:42:28,800 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 19:43:31,336 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:43:31,336 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:43:34,687 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 19:43:35,961 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 19:43:36,445 - INFO - \U0001f50d Query: What is suraj Lamp vs state of haryana judgnment
+2025-08-08 19:43:36,498 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:43:36,498 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:43:43,129 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:43:43,497 - INFO - \u2705 Similarity (query \u2194 answer): 0.8354
+2025-08-08 19:43:43,497 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7292
+2025-08-08 19:44:46,756 - INFO - \U0001f50d Query: Give me the judgenment for the murder case for the research
+2025-08-08 19:44:46,801 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:44:46,801 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:44:56,905 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:44:57,239 - INFO - \u2705 Similarity (query \u2194 answer): 0.6500
+2025-08-08 19:44:57,239 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6876
+2025-08-08 19:48:27,481 - INFO - \U0001f50d Query: Give me the judgenment for the murder case for the research
+2025-08-08 19:48:27,525 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:48:27,525 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:48:35,882 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:48:36,214 - INFO - \u2705 Similarity (query \u2194 answer): 0.7521
+2025-08-08 19:48:36,214 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6965
+2025-08-08 19:49:35,309 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:49:35,309 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:49:38,404 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 19:49:39,691 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 19:49:39,794 - INFO - \U0001f50d Query: Give me the judgenment for the murder case for the research
+2025-08-08 19:49:39,827 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:49:39,827 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:50:06,043 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:50:06,406 - INFO - \u2705 Similarity (query \u2194 answer): 0.5754
+2025-08-08 19:50:06,406 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7256
+2025-08-08 19:54:02,628 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:54:02,628 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:54:05,776 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 19:54:06,962 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 19:54:12,509 - INFO - \U0001f50d Query: Give me the judgenment for the murder case for the research
+2025-08-08 19:54:12,561 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:54:12,561 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:54:21,012 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:54:21,293 - INFO - \u2705 Similarity (query \u2194 answer): 0.6932
+2025-08-08 19:54:21,293 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7502
+2025-08-08 19:59:11,746 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:59:11,746 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:59:14,726 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 19:59:15,875 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 19:59:22,084 - INFO - \U0001f50d Query: Give me the judgenment for the murder case for the research
+2025-08-08 19:59:22,135 - INFO - Use pytorch device_name: cpu
+2025-08-08 19:59:22,135 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 19:59:37,373 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 19:59:37,703 - INFO - \u2705 Similarity (query \u2194 answer): 0.5727
+2025-08-08 19:59:37,703 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6759
+2025-08-08 20:04:06,595 - INFO - Use pytorch device_name: cpu
+2025-08-08 20:04:06,595 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 20:04:09,983 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 20:04:11,100 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 20:04:16,073 - INFO - \U0001f50d Query: Give me the judgenment for the murder case for the research
+2025-08-08 20:04:16,115 - INFO - Use pytorch device_name: cpu
+2025-08-08 20:04:16,115 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 20:04:35,672 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 20:04:35,981 - INFO - \u2705 Similarity (query \u2194 answer): 0.6176
+2025-08-08 20:04:35,981 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7670
+2025-08-08 20:06:23,284 - INFO - \U0001f50d Query: bachan singh judgement rarest of the rare
+2025-08-08 20:06:23,329 - INFO - Use pytorch device_name: cpu
+2025-08-08 20:06:23,329 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 20:06:44,693 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 20:06:44,995 - INFO - \u2705 Similarity (query \u2194 answer): 0.6966
+2025-08-08 20:06:44,995 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7711
+2025-08-08 20:16:32,900 - INFO - Use pytorch device_name: cpu
+2025-08-08 20:16:32,902 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 20:16:36,309 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-08 20:16:37,447 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-08 20:16:37,995 - INFO - \U0001f50d Query: bachan singh judgement rarest of the rare
+2025-08-08 20:16:38,054 - INFO - Use pytorch device_name: cpu
+2025-08-08 20:16:38,054 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 20:16:57,274 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 20:16:57,596 - INFO - \u2705 Similarity (query \u2194 answer): 0.6445
+2025-08-08 20:16:57,596 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7886
+2025-08-08 21:21:52,435 - INFO - \U0001f50d Query: 
+a student has been held back due to semester backlogs and he claims that his papers were not properly checked by the examiner. what remedies are avaiable for this student
+2025-08-08 21:21:52,487 - INFO - Use pytorch device_name: cpu
+2025-08-08 21:21:52,487 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 21:22:11,924 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:22:12,292 - INFO - \u2705 Similarity (query \u2194 answer): 0.6608
+2025-08-08 21:22:12,292 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6160
+2025-08-08 21:23:10,512 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:24:47,047 - INFO - \U0001f50d Query: 
+a student has been held back due to semester backlogs and he claims that his papers were not properly checked by the examiner. what remedies are avaiable for this student ? can writ befor high court be filed
+2025-08-08 21:24:47,106 - INFO - Use pytorch device_name: cpu
+2025-08-08 21:24:47,106 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 21:25:15,764 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:25:16,095 - INFO - \u2705 Similarity (query \u2194 answer): 0.6462
+2025-08-08 21:25:16,095 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6880
+2025-08-08 21:25:24,222 - INFO - \U0001f50d Query: 
+a student has been held back due to semester backlogs and he claims that his papers were not properly checked by the examiner. what remedies are avaiable for this student ? can writ befor high court be filed
+2025-08-08 21:25:24,282 - INFO - Use pytorch device_name: cpu
+2025-08-08 21:25:24,282 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 21:25:41,541 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:25:41,950 - INFO - \u2705 Similarity (query \u2194 answer): 0.5172
+2025-08-08 21:25:41,950 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6843
+2025-08-08 21:25:53,199 - INFO - \U0001f50d Query: 
+a student has been held back due to semester backlogs and he claims that his papers were not properly checked by the examiner. what remedies are avaiable for this student ? can writ befor high court be filed
+2025-08-08 21:25:53,238 - INFO - Use pytorch device_name: cpu
+2025-08-08 21:25:53,238 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 21:26:11,036 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:26:11,386 - INFO - \u2705 Similarity (query \u2194 answer): 0.5798
+2025-08-08 21:26:11,388 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6993
+2025-08-08 21:26:38,708 - INFO - \U0001f50d Query: 
+a student has been held back due to semester backlogs and he claims that his papers were not properly checked by the examiner. what remedies are avaiable for this student ? can writ befor high court be filed
+2025-08-08 21:26:38,744 - INFO - Use pytorch device_name: cpu
+2025-08-08 21:26:38,744 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 21:26:59,575 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:26:59,878 - INFO - \u2705 Similarity (query \u2194 answer): 0.4448
+2025-08-08 21:26:59,878 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6495
+2025-08-08 21:30:21,822 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:31:45,266 - INFO - \U0001f50d Query: judgements wherein courts has held that recorded phone conversation without consent are inadmissible
+2025-08-08 21:31:45,314 - INFO - Use pytorch device_name: cpu
+2025-08-08 21:31:45,314 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 21:32:05,144 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:32:05,581 - INFO - \u2705 Similarity (query \u2194 answer): 0.5964
+2025-08-08 21:32:05,581 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7735
+2025-08-08 21:35:30,243 - INFO - \U0001f50d Query: judgements wherein courts have held that recorded phone conversations without consent are inadmissible
+2025-08-08 21:35:30,293 - INFO - Use pytorch device_name: cpu
+2025-08-08 21:35:30,293 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 21:35:53,812 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:35:54,200 - INFO - \u2705 Similarity (query \u2194 answer): 0.6266
+2025-08-08 21:35:54,200 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7833
+2025-08-08 21:37:10,455 - INFO - \U0001f50d Query: judgments wherein court has allowed rechecking of semseter papers of students 
+2025-08-08 21:37:10,503 - INFO - Use pytorch device_name: cpu
+2025-08-08 21:37:10,503 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 21:37:17,508 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:37:17,886 - INFO - \u2705 Similarity (query \u2194 answer): 0.7259
+2025-08-08 21:37:17,886 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.5655
+2025-08-08 21:37:27,759 - INFO - \U0001f50d Query: judgments wherein the court has allowed rechecking of semester papers of students 
+2025-08-08 21:37:27,802 - INFO - Use pytorch device_name: cpu
+2025-08-08 21:37:27,802 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 21:37:33,860 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:37:34,130 - INFO - \u2705 Similarity (query \u2194 answer): 0.7799
+2025-08-08 21:37:34,130 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.5175
+2025-08-08 21:41:05,941 - INFO - \U0001f50d Query: judgments where in matrimonial cases call recordings without consent is considered inadmissible 
+2025-08-08 21:41:05,994 - INFO - Use pytorch device_name: cpu
+2025-08-08 21:41:05,994 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-08 21:41:19,456 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-08 21:41:19,860 - INFO - \u2705 Similarity (query \u2194 answer): 0.8126
+2025-08-08 21:41:19,860 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7787
