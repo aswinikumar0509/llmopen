@@ -10,6 +10,8 @@ from src.components.data_ingestion import load_documents_from_text_file, filter_
 from src.components.data_embedding import prepare_text_chunks_with_embeddings
 from langchain.retrievers import BM25Retriever, EnsembleRetriever
 from langchain_openai import ChatOpenAI
+from langchain_groq import ChatGroq
+from langchain.chains import RetrievalQA
 import os
 
 
@@ -17,11 +19,13 @@ load_dotenv()
 
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+OpenAI_API_KEY = os.getenv("OpenAI_API_KEY")
+os.environ["OpenAI_API_KEY"] = OpenAI_API_KEY
 
 
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
-from langchain_groq import ChatGroq
+
 llm = ChatOpenAI(
     model_name="gpt-4",  
     temperature=0.5,

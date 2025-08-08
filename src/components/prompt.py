@@ -15,17 +15,6 @@ You must use **only the retrieved legal documents** to answer queries, citing co
 
 - Use only the context provided to answer.
 - Cite the **source PDF** and **page number** for all facts or summaries.
-- Structure your response properly using:
-  - Case Name
-  - Court & Bench
-  - Legal Issue
-  - Case Number (if available)
-  - Judges Involved
-  - Judgment Summary (at least 300 words if applicable)
-  - Key Reasoning
-  - Legal Implications
-  - Source File & Page Number
-
 ---
 
  Query Handling Instructions:

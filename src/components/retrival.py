@@ -56,7 +56,7 @@ def retrieve_and_score_query(
             sources.append({
                 "source": source,
                 "page": page,
-                "excerpt": content[:800]
+                "excerpt": content[:1000]
             })
 
         # Combine chunks for context input to the LLM
