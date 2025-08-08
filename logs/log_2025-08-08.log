@@ -707,3 +707,12 @@ a student has been held back due to semester backlogs and he claims that his pap
 2025-08-08 22:13:42,282 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-08-08 22:13:42,606 - INFO - \u2705 Similarity (query \u2194 answer): 0.7683
 2025-08-08 22:13:42,606 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7335
+2025-08-09 00:05:35,367 - INFO - Ignored error after process had died: OSError(9, 'The handle is invalid', None, 6, None)
+2025-08-09 00:05:35,373 - INFO - Ignored error after process had died: OSError(9, 'The handle is invalid', None, 6, None)
+2025-08-09 00:05:41,460 - INFO - \U0001f50d Query: judgments where in matrimonial cases call recordings without consent is considered inadmissible 
+2025-08-09 00:05:41,521 - INFO - Use pytorch device_name: cpu
+2025-08-09 00:05:41,521 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 00:05:48,815 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 00:05:49,157 - INFO - \u2705 Similarity (query \u2194 answer): 0.6072
+2025-08-09 00:05:49,157 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7584
+2025-08-09 00:07:10,404 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
