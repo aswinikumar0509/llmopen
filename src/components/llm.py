@@ -18,16 +18,21 @@ import os
 load_dotenv()
 
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 # OpenAI_API_KEY = os.getenv("OpenAI_API_KEY")
-
 # os.environ["OpenAI_API_KEY"] = OpenAI_API_KEY
 
 
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+# os.environ["GROQ_API_KEY"] = GROQ_API_KEY
+
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError("❌ OPENAI_API_KEY is not set in the environment or .env file.")
+
+
 
 llm = ChatOpenAI(
-    model_name="gpt-4",
+    model_name="gpt-4",  
     temperature=0.5,
     top_p=0.9
 )
