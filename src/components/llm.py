@@ -25,15 +25,17 @@ load_dotenv()
 
 # os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
-api_key = os.getenv("OPENAI_API_KEY")
-if not api_key:
-    raise ValueError("❌ OPENAI_API_KEY is not set in the environment or .env file.")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 
+os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
-llm = ChatOpenAI(
-    model_name="gpt-4",  
-    temperature=0.5,
+from langchain_groq import ChatGroq
+
+llm = ChatGroq(
+    groq_api_key=GROQ_API_KEY,
+    model_name="Llama3-8b-8192",
+    temperature=0.8,
     top_p=0.9
 )
 
