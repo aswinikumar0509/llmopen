@@ -38,7 +38,7 @@ def store_documents_in_pinecone(
         os.environ["hf_token"] = hf_token or ""
 
         # Initialize Pinecone client
-        pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
+        pc = Pinecone(api_key=PINECONE_API_KEY)
 
         # Create index if it doesn't exist
         if not pc.has_index(index_name):

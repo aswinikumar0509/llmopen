@@ -725,3 +725,154 @@ a student has been held back due to semester backlogs and he claims that his pap
 2025-08-09 03:33:00,589 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
 2025-08-09 03:33:02,055 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
 2025-08-09 03:33:28,504 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 03:45:30,928 - INFO - Use pytorch device_name: cpu
+2025-08-09 03:45:30,928 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 03:45:34,241 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 03:45:35,657 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 03:45:35,938 - INFO - \U0001f50d Query: Provide me the judgenment for the murder cases
+2025-08-09 03:45:35,982 - INFO - Use pytorch device_name: cpu
+2025-08-09 03:45:35,982 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 03:45:44,797 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 03:45:45,023 - INFO - \u2705 Similarity (query \u2194 answer): 0.6981
+2025-08-09 03:45:45,023 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6441
+2025-08-09 03:56:10,525 - INFO - Use pytorch device_name: cpu
+2025-08-09 03:56:10,526 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 03:56:14,404 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 03:56:15,819 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 03:56:21,863 - INFO - \U0001f50d Query: Provide me the judgenment for the murder cases
+2025-08-09 03:56:21,921 - INFO - Use pytorch device_name: cpu
+2025-08-09 03:56:21,922 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 03:56:26,873 - ERROR - \u274c Retrieval failed: Missing some input keys: {'query'}
+2025-08-09 03:56:57,209 - INFO - Use pytorch device_name: cpu
+2025-08-09 03:56:57,209 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 03:57:00,510 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 03:57:01,607 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 03:59:59,083 - INFO - Use pytorch device_name: cpu
+2025-08-09 03:59:59,083 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:00:02,514 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 04:00:03,612 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 04:00:03,990 - INFO - \U0001f50d Query: provide me the judgenment for the murder cases
+2025-08-09 04:00:04,040 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:00:04,040 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:00:09,283 - ERROR - \u274c Retrieval failed: Missing some input keys: {'query'}
+2025-08-09 04:02:49,596 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:02:49,596 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:02:52,962 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 04:02:54,574 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 04:03:00,363 - INFO - \U0001f50d Query: provide me the judgenment for the murder cases
+2025-08-09 04:03:00,416 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:03:00,416 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:03:05,642 - ERROR - \u274c Retrieval failed: Missing some input keys: {'query'}
+2025-08-09 04:04:19,847 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:04:19,847 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:04:23,373 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 04:04:24,620 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 04:04:30,076 - INFO - \U0001f50d Query: provide me the judgenment for the murder cases
+2025-08-09 04:04:30,127 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:04:30,127 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:04:35,520 - ERROR - \u274c Retrieval failed: Missing some input keys: {'input'}
+2025-08-09 04:05:03,755 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:05:03,755 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:05:07,488 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 04:05:08,802 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 04:05:13,087 - INFO - \U0001f50d Query: provide me the judgenment for the murder cases
+2025-08-09 04:05:13,146 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:05:13,146 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:05:22,588 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:05:22,802 - INFO - \u2705 Similarity (query \u2194 answer): 0.7146
+2025-08-09 04:05:22,802 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6746
+2025-08-09 04:05:24,254 - INFO - \U0001f50d Query: Provide me with the judgment for the murder cases
+2025-08-09 04:05:24,312 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:05:24,312 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:05:33,288 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:05:33,520 - INFO - \u2705 Similarity (query \u2194 answer): 0.6124
+2025-08-09 04:05:33,520 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.5880
+2025-08-09 04:06:25,686 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:06:25,686 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:06:29,618 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 04:06:30,658 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 04:06:30,765 - INFO - \U0001f50d Query: Provide me with the judgment for the murder cases
+2025-08-09 04:06:30,807 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:06:30,807 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:06:41,209 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:06:41,426 - INFO - \u2705 Similarity (query \u2194 answer): 0.7471
+2025-08-09 04:06:41,426 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6810
+2025-08-09 04:07:07,368 - INFO - \U0001f50d Query: Provide Supreme court judgments discussing the rights of daughters in a coparcenary property.
+2025-08-09 04:07:07,424 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:07:07,424 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:07:29,019 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:07:29,334 - INFO - \u2705 Similarity (query \u2194 answer): 0.6433
+2025-08-09 04:07:29,334 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7638
+2025-08-09 04:09:29,813 - INFO - \U0001f50d Query: provide me suraj lamp vs state of haryana judgenment
+2025-08-09 04:09:29,878 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:09:29,878 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:09:37,595 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:09:37,869 - INFO - \u2705 Similarity (query \u2194 answer): 0.8744
+2025-08-09 04:09:37,869 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7012
+2025-08-09 04:11:13,328 - INFO - \U0001f50d Query: Byluru Thippaiah @ Byaluru Thippaiah 
+@ Nayakara Thippaiah
+v.
+State of Karnataka
+2025-08-09 04:11:13,378 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:11:13,378 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:11:21,778 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:11:21,995 - INFO - \u2705 Similarity (query \u2194 answer): 0.8684
+2025-08-09 04:11:21,995 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6567
+2025-08-09 04:13:03,682 - INFO - \U0001f50d Query: Provide me the judgement for the drunk and drive case
+2025-08-09 04:13:03,725 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:13:03,725 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:13:21,422 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:13:21,711 - INFO - \u2705 Similarity (query \u2194 answer): 0.6254
+2025-08-09 04:13:21,711 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7559
+2025-08-09 04:15:17,318 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:15:17,318 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:15:21,467 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 04:15:22,829 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 04:15:23,567 - INFO - \U0001f50d Query: Provide me the judgement for the drunk and drive case
+2025-08-09 04:15:23,618 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:15:23,618 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:15:40,037 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:15:40,386 - INFO - \u2705 Similarity (query \u2194 answer): 0.6235
+2025-08-09 04:15:40,386 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7388
+2025-08-09 04:16:43,498 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:16:43,498 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:16:49,558 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 04:16:50,909 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 04:16:55,724 - INFO - \U0001f50d Query: Provide me the judgement for the drunk and drive case
+2025-08-09 04:16:55,793 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:16:55,794 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:17:08,829 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:17:09,144 - INFO - \u2705 Similarity (query \u2194 answer): 0.6375
+2025-08-09 04:17:09,144 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6796
+2025-08-09 04:18:25,411 - INFO - \U0001f50d Query: Provide me the judgement for the murder case
+2025-08-09 04:18:25,455 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:18:25,455 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:18:35,870 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:18:36,113 - INFO - \u2705 Similarity (query \u2194 answer): 0.6863
+2025-08-09 04:18:36,113 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6955
+2025-08-09 04:19:17,996 - INFO - \U0001f50d Query: Provide me rarest of rare case
+2025-08-09 04:19:18,053 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:19:18,053 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:19:31,560 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:19:31,792 - INFO - \u2705 Similarity (query \u2194 answer): 0.6452
+2025-08-09 04:19:31,792 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7755
+2025-08-09 04:27:31,942 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:27:31,942 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:27:35,404 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 04:27:37,005 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 04:27:37,133 - INFO - \U0001f50d Query: Provide me rarest of rare case
+2025-08-09 04:27:37,169 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:27:37,169 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:27:53,159 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:27:53,398 - INFO - \u2705 Similarity (query \u2194 answer): 0.6367
+2025-08-09 04:27:53,398 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7747
+2025-08-09 04:33:07,849 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:33:07,849 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:33:11,243 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-09 04:33:12,618 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-09 04:33:12,786 - INFO - \U0001f50d Query: Provide me rarest of rare case
+2025-08-09 04:33:12,819 - INFO - Use pytorch device_name: cpu
+2025-08-09 04:33:12,819 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-09 04:33:18,930 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-09 04:33:19,139 - INFO - \u2705 Similarity (query \u2194 answer): 0.7001
+2025-08-09 04:33:19,141 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7655
