@@ -9,7 +9,6 @@ from src.components.prompt import prompt
 from src.components.data_ingestion import load_documents_from_text_file, filter_to_minimal_docs
 from src.components.data_embedding import prepare_text_chunks_with_embeddings
 from langchain.retrievers import BM25Retriever, EnsembleRetriever
-from langchain_openai import ChatOpenAI
 from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
 import os
@@ -17,13 +16,6 @@ import os
 
 load_dotenv()
 
-
-# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-# OpenAI_API_KEY = os.getenv("OpenAI_API_KEY")
-# os.environ["OpenAI_API_KEY"] = OpenAI_API_KEY
-
-
-# os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
