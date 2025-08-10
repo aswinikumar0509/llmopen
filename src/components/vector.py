@@ -86,12 +86,12 @@ def load_existing_docsearch(index_name: str = "test-txt-chatbot1") -> PineconeVe
         load_dotenv()
 
         PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-        OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+        # OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-        if not PINECONE_API_KEY or not OPENAI_API_KEY:
-            raise ValueError("Missing Pinecone or OpenAI API key in environment.")
+        # if not PINECONE_API_KEY or not OPENAI_API_KEY:
+            # raise ValueError("Missing Pinecone or OpenAI API key in environment.")
 
-        os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+        # os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
         os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 
         embedding = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
