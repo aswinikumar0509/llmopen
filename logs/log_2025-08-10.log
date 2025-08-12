@@ -1,0 +1,11 @@
+2025-08-10 22:57:52,438 - INFO - Use pytorch device_name: cpu
+2025-08-10 22:57:52,438 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-10 22:57:57,423 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-10 22:57:59,834 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-10 22:58:16,053 - INFO - \U0001f50d Query: Provide me the judgenment for murder cases
+2025-08-10 22:58:16,059 - INFO - Use pytorch device_name: cpu
+2025-08-10 22:58:16,059 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-10 22:58:23,057 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-10 22:58:23,307 - INFO - \u2705 Similarity (query \u2194 answer): 0.6291
+2025-08-10 22:58:23,308 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7882
+2025-08-10 22:59:10,772 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
