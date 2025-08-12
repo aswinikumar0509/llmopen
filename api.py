@@ -1,63 +1,90 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+from typing import List, Optional
+
 from langchain.memory import ConversationBufferMemory
 from src.components.retrival import retrieve_and_score_query
-from src.components.tools import summarizer_fn
+from src.components.tools import summarizer_fn, legal_drafting_fn
 
-# FastAPI app instance
-app = FastAPI(title="Legal RAG Assistant API", version="1.0")
+# Initialize FastAPI
+app = FastAPI(title="Vakki: Legal Research Assistant API")
 
-# Global conversation memory (in-memory)
-memory = ConversationBufferMemory(return_messages=True)
+# Global memory store (per server instance)
+chat_memory = ConversationBufferMemory(return_messages=True)
+retrieved_answer = None
+retrieved_sources = []
 
-
-# Request/Response Schemas
+# Request models
 class QueryRequest(BaseModel):
     query: str
 
+class SummarizeRequest(BaseModel):
+    text: str
 
-class RetrieveResponse(BaseModel):
-    answer: str
-    similarity: float
-    faithfulness: float
-
-
-class SummaryRequest(BaseModel):
-    answer: str
+class DraftRequest(BaseModel):
+    instructions: str
 
 
-class SummaryResponse(BaseModel):
-    summary: str
-
-
-@app.post("/retrieve", response_model=RetrieveResponse)
-def retrieve_answer(request: QueryRequest):
-    query = request.query.strip()
-
-    if not query:
-        raise HTTPException(status_code=400, detail="Query cannot be empty.")
-
+@app.post("/retrieve")
+def retrieve_answer(req: QueryRequest):
+    """
+    Retrieve a legal answer from the knowledge base.
+    """
+    global retrieved_answer, retrieved_sources
     try:
-        answer, similarity, faithfulness = retrieve_and_score_query(query, memory=memory)
-        return RetrieveResponse(answer=answer, similarity=similarity, faithfulness=faithfulness)
+        answer, similarity, faithfulness, sources = retrieve_and_score_query(
+            req.query, memory=chat_memory
+        )
+        retrieved_answer = answer
+        retrieved_sources = sources
+
+        return {
+            "answer": answer,
+            "similarity_score": similarity,
+            "faithfulness_score": faithfulness,
+            "sources": sources
+        }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.post("/summarize", response_model=SummaryResponse)
-def summarize_answer(request: SummaryRequest):
-    answer = request.answer.strip()
-
-    if not answer:
-        raise HTTPException(status_code=400, detail="Answer cannot be empty.")
+@app.post("/summarize")
+def summarize_answer(req: SummarizeRequest):
+    """
+    Summarize the given answer text.
+    """
+    if not req.text.strip():
+        raise HTTPException(status_code=400, detail="No text provided for summarization.")
 
     try:
-        summary = summarizer_fn(answer)
-        return SummaryResponse(summary=summary)
+        summary = summarizer_fn(req.text)
+        return {"summary": summary}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.get("/")
-def root():
-    return {"message": "Welcome to Legal RAG Assistant API! Use /retrieve or /summarize."}
+@app.post("/draft")
+def draft_legal_document(req: DraftRequest):
+    """
+    Draft a legal document from provided instructions.
+    """
+    if not req.instructions.strip():
+        raise HTTPException(status_code=400, detail="No drafting instructions provided.")
+
+    try:
+        draft = legal_drafting_fn(req.instructions)
+        return {"draft": draft}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/memory")
+def get_conversation_memory():
+    """
+    Return stored conversation memory messages.
+    """
+    messages = [
+        {"role": "user" if msg.type == "human" else "assistant", "content": msg.content}
+        for msg in chat_memory.chat_memory.messages
+    ]
+    return {"messages": messages}

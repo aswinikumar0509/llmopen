@@ -410,3 +410,19 @@
 2025-08-12 19:16:38,093 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-08-12 19:16:38,327 - INFO - \u2705 Similarity (query \u2194 answer): 0.7709
 2025-08-12 19:16:38,327 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8571
+2025-08-12 23:29:04,572 - INFO - Use pytorch device_name: cpu
+2025-08-12 23:29:04,572 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 23:29:08,808 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-12 23:29:11,638 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-12 23:29:48,442 - INFO - \U0001f50d Query: Can fresh evidence be introduced at the appellate stage?
+2025-08-12 23:29:48,446 - INFO - Use pytorch device_name: cpu
+2025-08-12 23:29:48,446 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 23:29:54,977 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 23:29:55,371 - INFO - \u2705 Similarity (query \u2194 answer): 0.7333
+2025-08-12 23:29:55,372 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8065
+2025-08-12 23:30:19,169 - INFO - \U0001f50d Query: Can fresh evidence be introduced at the appellate stage?
+2025-08-12 23:30:19,175 - INFO - Use pytorch device_name: cpu
+2025-08-12 23:30:19,176 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 23:30:25,157 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 23:30:25,491 - INFO - \u2705 Similarity (query \u2194 answer): 0.7197
+2025-08-12 23:30:25,491 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8500
