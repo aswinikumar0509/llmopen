@@ -1,0 +1,412 @@
+2025-08-12 12:30:42,118 - INFO - Use pytorch device_name: cpu
+2025-08-12 12:30:42,118 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 12:30:48,529 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-12 12:30:50,868 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-12 13:05:30,769 - INFO - \U0001f50d Query: Provide me judgments of High Courts and the Supreme Court wherein the accused was released on bail due to a lack of grounds for arrest in the arrest memo, or that the accused was not informed of his grounds of arrest
+2025-08-12 13:05:30,783 - INFO - Use pytorch device_name: cpu
+2025-08-12 13:05:30,783 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 13:05:37,534 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 13:05:37,796 - INFO - \u2705 Similarity (query \u2194 answer): 0.5316
+2025-08-12 13:05:37,796 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.5838
+2025-08-12 13:07:26,535 - INFO - \U0001f50d Query: under what provisions and acts maintenance can be granted to a spouse
+2025-08-12 13:07:26,539 - INFO - Use pytorch device_name: cpu
+2025-08-12 13:07:26,539 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 13:07:32,165 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 13:07:32,372 - INFO - \u2705 Similarity (query \u2194 answer): 0.7772
+2025-08-12 13:07:32,372 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8099
+2025-08-12 13:09:51,554 - INFO - \U0001f50d Query: Judgements where the discharge of the accused is discussed in detail. 
+2025-08-12 13:09:51,565 - INFO - Use pytorch device_name: cpu
+2025-08-12 13:09:51,565 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 13:09:57,767 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 13:09:57,967 - INFO - \u2705 Similarity (query \u2194 answer): 0.7065
+2025-08-12 13:09:57,967 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7822
+2025-08-12 13:12:15,775 - INFO - \U0001f50d Query: If a complaint case is dismissed by a magistrate before taking cognisance, then the remedy against that dismissal order lies in which court?
+2025-08-12 13:12:15,783 - INFO - Use pytorch device_name: cpu
+2025-08-12 13:12:15,783 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 13:12:21,253 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 13:12:21,470 - INFO - \u2705 Similarity (query \u2194 answer): 0.7731
+2025-08-12 13:12:21,470 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8714
+2025-08-12 13:13:32,390 - INFO - \U0001f50d Query: how rarest of rare case is determined
+2025-08-12 13:13:32,403 - INFO - Use pytorch device_name: cpu
+2025-08-12 13:13:32,404 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 13:13:38,120 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 13:13:38,330 - INFO - \u2705 Similarity (query \u2194 answer): 0.7860
+2025-08-12 13:13:38,330 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8606
+2025-08-12 13:31:38,120 - INFO - \U0001f50d Query: Can an accused bring documents of sterling quality during the stage of charge?
+2025-08-12 13:31:38,127 - INFO - Use pytorch device_name: cpu
+2025-08-12 13:31:38,127 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 13:31:44,869 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 13:31:45,074 - INFO - \u2705 Similarity (query \u2194 answer): 0.8123
+2025-08-12 13:31:45,074 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7789
+2025-08-12 13:33:01,505 - INFO - \U0001f50d Query: recent judgements on Plea bargaining
+
+2025-08-12 13:33:01,519 - INFO - Use pytorch device_name: cpu
+2025-08-12 13:33:01,519 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 13:33:07,870 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 13:33:08,105 - INFO - \u2705 Similarity (query \u2194 answer): 0.6921
+2025-08-12 13:33:08,105 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7029
+2025-08-12 13:33:48,811 - INFO - \U0001f50d Query: recent judgements on Plea bargaining
+
+2025-08-12 13:33:48,820 - INFO - Use pytorch device_name: cpu
+2025-08-12 13:33:48,820 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 13:33:54,054 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 13:33:54,270 - INFO - \u2705 Similarity (query \u2194 answer): 0.7175
+2025-08-12 13:33:54,270 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7696
+2025-08-12 13:35:08,658 - INFO - \U0001f50d Query: under what circumstances anticipatory bail be granted
+
+2025-08-12 13:35:08,674 - INFO - Use pytorch device_name: cpu
+2025-08-12 13:35:08,674 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 13:35:14,482 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 13:35:14,700 - INFO - \u2705 Similarity (query \u2194 answer): 0.8439
+2025-08-12 13:35:14,700 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.9117
+2025-08-12 13:35:24,624 - INFO - \U0001f50d Query: under what circumstances anticipatory bail be granted
+
+2025-08-12 13:35:24,633 - INFO - Use pytorch device_name: cpu
+2025-08-12 13:35:24,633 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 13:35:29,981 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 13:35:30,214 - INFO - \u2705 Similarity (query \u2194 answer): 0.8412
+2025-08-12 13:35:30,214 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.9178
+2025-08-12 14:12:22,518 - INFO - \U0001f50d Query: judgements on false charge of offence with intent to injure
+
+2025-08-12 14:12:22,536 - INFO - Use pytorch device_name: cpu
+2025-08-12 14:12:22,537 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 14:12:31,625 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 14:12:31,997 - INFO - \u2705 Similarity (query \u2194 answer): 0.7538
+2025-08-12 14:12:31,997 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7654
+2025-08-12 14:12:51,704 - INFO - \U0001f50d Query: judgements on false charge of offence with intent to injure
+
+2025-08-12 14:12:51,724 - INFO - Use pytorch device_name: cpu
+2025-08-12 14:12:51,725 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 14:12:58,723 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 14:12:59,075 - INFO - \u2705 Similarity (query \u2194 answer): 0.7929
+2025-08-12 14:12:59,075 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7897
+2025-08-12 14:18:12,739 - INFO - \U0001f50d Query: provide judgements wherein it was help that GPA is not proof of ownership of property
+2025-08-12 14:18:12,753 - INFO - Use pytorch device_name: cpu
+2025-08-12 14:18:12,753 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 14:18:24,221 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 14:18:24,552 - INFO - \u2705 Similarity (query \u2194 answer): 0.5387
+2025-08-12 14:18:24,552 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6041
+2025-08-12 14:24:00,233 - INFO - \U0001f50d Query: provide judgements wherein it was help that GPA is not proof of ownership of property
+2025-08-12 14:24:00,250 - INFO - Use pytorch device_name: cpu
+2025-08-12 14:24:00,250 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 14:24:10,410 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 14:24:10,793 - INFO - \u2705 Similarity (query \u2194 answer): 0.7391
+2025-08-12 14:24:10,793 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7427
+2025-08-12 14:24:34,620 - INFO - \U0001f50d Query: provide judgements wherein it was help that GPA is not proof of ownership of property
+2025-08-12 14:24:34,629 - INFO - Use pytorch device_name: cpu
+2025-08-12 14:24:34,629 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 14:24:44,736 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 14:24:45,090 - INFO - \u2705 Similarity (query \u2194 answer): 0.7219
+2025-08-12 14:24:45,090 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7447
+2025-08-12 14:25:49,435 - INFO - \U0001f50d Query: suraj lamp judgement is regarding which law
+2025-08-12 14:25:49,449 - INFO - Use pytorch device_name: cpu
+2025-08-12 14:25:49,449 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 14:26:04,881 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 14:26:05,171 - INFO - \u2705 Similarity (query \u2194 answer): 0.8517
+2025-08-12 14:26:05,171 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7702
+2025-08-12 14:27:21,911 - INFO - \U0001f50d Query: suraj lamp vs state of haryana judgenment
+2025-08-12 14:27:21,925 - INFO - Use pytorch device_name: cpu
+2025-08-12 14:27:21,925 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 14:27:33,779 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 14:27:34,170 - INFO - \u2705 Similarity (query \u2194 answer): 0.7372
+2025-08-12 14:27:34,172 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7381
+2025-08-12 14:28:14,619 - INFO - \U0001f50d Query: suraj lamp vs state of haryana judgenment
+2025-08-12 14:28:14,635 - INFO - Use pytorch device_name: cpu
+2025-08-12 14:28:14,635 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 14:28:23,916 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 14:28:24,259 - INFO - \u2705 Similarity (query \u2194 answer): 0.5920
+2025-08-12 14:28:24,259 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6700
+2025-08-12 14:28:32,836 - INFO - \U0001f50d Query: Suraj Lamp vs State of Haryana judgment
+2025-08-12 14:28:32,859 - INFO - Use pytorch device_name: cpu
+2025-08-12 14:28:32,859 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 14:28:42,617 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 14:28:42,978 - INFO - \u2705 Similarity (query \u2194 answer): 0.8010
+2025-08-12 14:28:42,978 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.9163
+2025-08-12 14:29:16,434 - INFO - \U0001f50d Query: Suraj Lamp vs State of Haryana judgment
+2025-08-12 14:29:16,459 - INFO - Use pytorch device_name: cpu
+2025-08-12 14:29:16,460 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 14:29:27,046 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 14:29:27,429 - INFO - \u2705 Similarity (query \u2194 answer): 0.8533
+2025-08-12 14:29:27,429 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8812
+2025-08-12 15:54:07,706 - INFO - \U0001f50d Query: What is the Supreme Court’s interpretation of Article 21 in relation to the right to privacy?
+2025-08-12 15:54:07,743 - INFO - Use pytorch device_name: cpu
+2025-08-12 15:54:07,743 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 15:54:16,677 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 15:54:16,989 - INFO - \u2705 Similarity (query \u2194 answer): 0.8370
+2025-08-12 15:54:16,989 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.9229
+2025-08-12 15:54:58,450 - INFO - \U0001f50d Query: How has the Supreme Court defined “reasonable restrictions” under Article 19(1)(a)?
+2025-08-12 15:54:58,480 - INFO - Use pytorch device_name: cpu
+2025-08-12 15:54:58,480 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 15:55:03,997 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 15:55:04,344 - INFO - \u2705 Similarity (query \u2194 answer): 0.7467
+2025-08-12 15:55:04,344 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8235
+2025-08-12 15:56:59,055 - INFO - \U0001f50d Query: What was the Supreme Court’s reasoning in the Kesavananda Bharati v. State of Kerala case?
+2025-08-12 15:56:59,101 - INFO - Use pytorch device_name: cpu
+2025-08-12 15:56:59,101 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 15:57:05,178 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 15:57:05,629 - INFO - \u2705 Similarity (query \u2194 answer): 0.8233
+2025-08-12 15:57:05,629 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8821
+2025-08-12 15:57:54,213 - INFO - \U0001f50d Query: How did the Supreme Court interpret Article 14 in relation to equality before the law?
+2025-08-12 15:57:54,235 - INFO - Use pytorch device_name: cpu
+2025-08-12 15:57:54,236 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 15:57:59,759 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 15:58:00,153 - INFO - \u2705 Similarity (query \u2194 answer): 0.6250
+2025-08-12 15:58:00,154 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8548
+2025-08-12 15:59:56,891 - INFO - \U0001f50d Query: Can the Parliament amend Fundamental Rights under Article 368? Cite relevant cases.
+2025-08-12 15:59:56,917 - INFO - Use pytorch device_name: cpu
+2025-08-12 15:59:56,917 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:00:02,800 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:00:03,155 - INFO - \u2705 Similarity (query \u2194 answer): 0.6727
+2025-08-12 16:00:03,155 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7654
+2025-08-12 16:01:12,399 - INFO - \U0001f50d Query: What is the doctrine of “basic structure” as upheld by the Supreme Court?
+2025-08-12 16:01:12,428 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:01:12,429 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:01:20,464 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:01:20,887 - INFO - \u2705 Similarity (query \u2194 answer): 0.7583
+2025-08-12 16:01:20,887 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8724
+2025-08-12 16:02:13,976 - INFO - \U0001f50d Query: How did the Supreme Court interpret secularism in the S.R. Bommai case?
+2025-08-12 16:02:14,013 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:02:14,013 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:02:18,975 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:02:19,378 - INFO - \u2705 Similarity (query \u2194 answer): 0.6285
+2025-08-12 16:02:19,378 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7971
+2025-08-12 16:03:17,076 - INFO - \U0001f50d Query: What powers does the Supreme Court have under Article 142?
+2025-08-12 16:03:17,111 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:03:17,111 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:03:23,341 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:03:23,616 - INFO - \u2705 Similarity (query \u2194 answer): 0.7722
+2025-08-12 16:03:23,616 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8022
+2025-08-12 16:04:11,077 - INFO - \U0001f50d Query: What is the Supreme Court’s view on the interplay between Directive Principles and Fundamental Rights?
+
+2025-08-12 16:04:11,103 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:04:11,103 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:04:17,326 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:04:17,682 - INFO - \u2705 Similarity (query \u2194 answer): 0.8028
+2025-08-12 16:04:17,682 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8485
+2025-08-12 16:05:10,880 - INFO - \U0001f50d Query: How has the Supreme Court interpreted the right to education under Article 21A?
+
+2025-08-12 16:05:10,901 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:05:10,901 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:05:17,334 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:05:17,743 - INFO - \u2705 Similarity (query \u2194 answer): 0.8490
+2025-08-12 16:05:17,743 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.9012
+2025-08-12 16:15:34,347 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:15:34,347 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:15:37,945 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-12 16:15:39,244 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-12 16:15:50,298 - INFO - \U0001f50d Query: How has the Supreme Court defined the concept of “rarest of rare” in death penalty cases?
+2025-08-12 16:15:50,314 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:15:50,314 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:16:11,211 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:16:11,480 - INFO - \u2705 Similarity (query \u2194 answer): 0.8134
+2025-08-12 16:16:11,480 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8932
+2025-08-12 16:16:46,101 - INFO - \U0001f50d Query: What is the Court’s interpretation of Section 375 IPC in relation to consent?
+2025-08-12 16:16:46,115 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:16:46,115 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:17:00,759 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:17:01,002 - INFO - \u2705 Similarity (query \u2194 answer): 0.7791
+2025-08-12 16:17:01,002 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8883
+2025-08-12 16:17:51,690 - INFO - \U0001f50d Query: How has the Supreme Court handled cases involving custodial torture?
+2025-08-12 16:17:51,708 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:17:51,708 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:18:06,439 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:18:06,641 - INFO - \u2705 Similarity (query \u2194 answer): 0.7670
+2025-08-12 16:18:06,641 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8101
+2025-08-12 16:18:55,753 - INFO - \U0001f50d Query: What is the Supreme Court’s stance on anticipatory bail under Section 438 CrPC?
+2025-08-12 16:18:55,762 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:18:55,762 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:19:11,170 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:19:11,416 - INFO - \u2705 Similarity (query \u2194 answer): 0.7737
+2025-08-12 16:19:11,416 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8987
+2025-08-12 16:19:47,122 - INFO - \U0001f50d Query: How did the Supreme Court interpret dowry death provisions under Section 304B IPC?
+2025-08-12 16:19:47,135 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:19:47,135 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:20:04,669 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:20:04,923 - INFO - \u2705 Similarity (query \u2194 answer): 0.8455
+2025-08-12 16:20:04,923 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.9257
+2025-08-12 16:20:06,822 - INFO - \U0001f50d Query: How did the Supreme Court interpret dowry death provisions under Section 304B IPC?
+2025-08-12 16:20:06,838 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:20:06,839 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:20:23,352 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:20:23,571 - INFO - \u2705 Similarity (query \u2194 answer): 0.8132
+2025-08-12 16:20:23,571 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.9032
+2025-08-12 16:22:14,383 - INFO - \U0001f50d Query: Can an accused be tried twice for the same offence? Cite Article 20(2).
+2025-08-12 16:22:14,399 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:22:14,399 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:22:28,965 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:22:29,200 - INFO - \u2705 Similarity (query \u2194 answer): 0.7040
+2025-08-12 16:22:29,200 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8717
+2025-08-12 16:23:20,658 - INFO - \U0001f50d Query: What safeguards has the Supreme Court laid down for arrest procedures?
+2025-08-12 16:23:20,672 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:23:20,672 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:23:44,912 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:23:45,178 - INFO - \u2705 Similarity (query \u2194 answer): 0.7807
+2025-08-12 16:23:45,178 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8646
+2025-08-12 16:24:25,754 - INFO - \U0001f50d Query: How did the Court rule on criminal defamation under Sections 499–500 IPC?
+2025-08-12 16:24:25,774 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:24:25,774 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:24:40,943 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:24:41,163 - INFO - \u2705 Similarity (query \u2194 answer): 0.7387
+2025-08-12 16:24:41,163 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8170
+2025-08-12 16:25:21,745 - INFO - \U0001f50d Query: What is the judicial interpretation of “abetment of suicide” under Section 306 IPC?
+2025-08-12 16:25:21,758 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:25:21,758 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:25:43,224 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:25:43,477 - INFO - \u2705 Similarity (query \u2194 answer): 0.7532
+2025-08-12 16:25:43,477 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8587
+2025-08-12 16:26:28,365 - INFO - \U0001f50d Query: How has the Court applied Section 302 IPC in cases of circumstantial evidence?
+2025-08-12 16:26:28,387 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:26:28,387 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:26:42,040 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:26:42,166 - INFO - \u2705 Similarity (query \u2194 answer): 0.8227
+2025-08-12 16:26:42,166 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8507
+2025-08-12 16:47:43,611 - INFO - \U0001f50d Query: How does the Supreme Court handle disputes over specific performance of contracts?
+2025-08-12 16:47:43,639 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:47:43,639 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:47:58,931 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:47:59,124 - INFO - \u2705 Similarity (query \u2194 answer): 0.7639
+2025-08-12 16:47:59,124 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7898
+2025-08-12 16:48:57,944 - INFO - \U0001f50d Query: What is the Court’s stance on adverse possession claims?
+2025-08-12 16:48:57,969 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:48:57,969 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:49:14,235 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:49:14,473 - INFO - \u2705 Similarity (query \u2194 answer): 0.7741
+2025-08-12 16:49:14,473 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8958
+2025-08-12 16:49:58,092 - INFO - \U0001f50d Query: How has the Supreme Court interpreted the concept of “public trust doctrine” in environmental cases?
+2025-08-12 16:49:58,119 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:49:58,119 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:50:02,684 - WARNING - Retrying (JitterRetry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /query
+2025-08-12 16:50:12,201 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:50:12,435 - INFO - \u2705 Similarity (query \u2194 answer): 0.7328
+2025-08-12 16:50:12,435 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8811
+2025-08-12 16:50:56,555 - INFO - \U0001f50d Query: Can a minor enter into a valid contract? Cite relevant judgments.
+2025-08-12 16:50:56,579 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:50:56,579 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:51:11,164 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:51:11,407 - INFO - \u2705 Similarity (query \u2194 answer): 0.7135
+2025-08-12 16:51:11,407 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7969
+2025-08-12 16:51:51,532 - INFO - \U0001f50d Query: How has the Court interpreted “time is the essence” in contract law?
+2025-08-12 16:51:51,560 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:51:51,560 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:52:13,012 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:52:13,260 - INFO - \u2705 Similarity (query \u2194 answer): 0.7089
+2025-08-12 16:52:13,261 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8838
+2025-08-12 16:53:05,836 - INFO - \U0001f50d Query: What principles govern the grant of injunctions as per Supreme Court precedents?
+2025-08-12 16:53:05,861 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:53:05,861 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:53:19,810 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:53:20,047 - INFO - \u2705 Similarity (query \u2194 answer): 0.6843
+2025-08-12 16:53:20,047 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.9097
+2025-08-12 16:54:03,406 - INFO - \U0001f50d Query: How has the Supreme Court applied the law of estoppel in property disputes?
+2025-08-12 16:54:03,422 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:54:03,422 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:54:11,562 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:54:11,797 - INFO - \u2705 Similarity (query \u2194 answer): 0.7536
+2025-08-12 16:54:11,797 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7072
+2025-08-12 16:54:55,544 - INFO - \U0001f50d Query: What is the Court’s approach to partition suits involving joint family property?
+2025-08-12 16:54:55,566 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:54:55,566 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:55:12,308 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:55:12,552 - INFO - \u2705 Similarity (query \u2194 answer): 0.8683
+2025-08-12 16:55:12,552 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8689
+2025-08-12 16:55:52,865 - INFO - \U0001f50d Query: How has the Supreme Court interpreted Section 13B of the Hindu Marriage Act on mutual consent divorce?
+2025-08-12 16:55:52,882 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:55:52,882 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:56:12,538 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:56:12,770 - INFO - \u2705 Similarity (query \u2194 answer): 0.8519
+2025-08-12 16:56:12,770 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.9313
+2025-08-12 16:56:59,756 - INFO - \U0001f50d Query: Can live-in relationships be considered “relationships in the nature of marriage” under Indian law?
+2025-08-12 16:56:59,785 - INFO - Use pytorch device_name: cpu
+2025-08-12 16:56:59,785 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 16:57:14,918 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 16:57:15,135 - INFO - \u2705 Similarity (query \u2194 answer): 0.8653
+2025-08-12 16:57:15,136 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8631
+2025-08-12 18:25:56,415 - INFO - \U0001f50d Query: create a draft for the bussiness 
+2025-08-12 18:25:56,440 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:25:56,440 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:26:11,258 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 18:26:11,558 - INFO - \u2705 Similarity (query \u2194 answer): 0.5783
+2025-08-12 18:26:11,558 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.5097
+2025-08-12 18:26:29,797 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 18:39:46,977 - INFO - \U0001f50d Query: How does the Supreme Court handle disputes over specific performance of contracts?
+2025-08-12 18:39:47,019 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:39:47,020 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:40:05,478 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 18:40:05,709 - INFO - \u2705 Similarity (query \u2194 answer): 0.8055
+2025-08-12 18:40:05,710 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8278
+2025-08-12 18:41:12,636 - INFO - \U0001f50d Query: How has the Supreme Court interpreted the scope of writ jurisdiction under Article 32?
+2025-08-12 18:41:12,661 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:41:12,661 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:41:25,154 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 18:41:25,263 - INFO - \u2705 Similarity (query \u2194 answer): 0.7489
+2025-08-12 18:41:25,263 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7788
+2025-08-12 18:42:09,282 - INFO - \U0001f50d Query: Can the Supreme Court entertain a PIL without locus standi?
+2025-08-12 18:42:09,323 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:42:09,323 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:42:25,185 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 18:42:25,434 - INFO - \u2705 Similarity (query \u2194 answer): 0.7360
+2025-08-12 18:42:25,434 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8572
+2025-08-12 18:43:08,601 - INFO - \U0001f50d Query: How does the Court determine territorial jurisdiction in civil cases?
+2025-08-12 18:43:08,632 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:43:08,632 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:43:23,899 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 18:43:24,156 - INFO - \u2705 Similarity (query \u2194 answer): 0.8054
+2025-08-12 18:43:24,156 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8602
+2025-08-12 18:43:41,601 - INFO - \U0001f50d Query: How does the Court determine territorial jurisdiction in civil cases?
+2025-08-12 18:43:41,621 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:43:41,622 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:43:54,718 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 18:43:54,938 - INFO - \u2705 Similarity (query \u2194 answer): 0.7881
+2025-08-12 18:43:54,938 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8446
+2025-08-12 18:44:37,921 - INFO - \U0001f50d Query: What is the rule on maintainability of SLPs under Article 136?
+2025-08-12 18:44:37,947 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:44:37,947 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:44:47,346 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 18:44:47,615 - INFO - \u2705 Similarity (query \u2194 answer): 0.5937
+2025-08-12 18:44:47,615 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.6959
+2025-08-12 18:45:22,858 - INFO - \U0001f50d Query: Can fresh evidence be introduced at the appellate stage?
+2025-08-12 18:45:22,886 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:45:22,886 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:45:39,895 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 18:45:40,138 - INFO - \u2705 Similarity (query \u2194 answer): 0.8564
+2025-08-12 18:45:40,138 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.7271
+2025-08-12 18:46:47,176 - INFO - \U0001f50d Query: How has the Court interpreted limitation periods in civil appeals?
+2025-08-12 18:46:47,206 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:46:47,206 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:47:10,370 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 18:47:10,607 - INFO - \u2705 Similarity (query \u2194 answer): 0.7863
+2025-08-12 18:47:10,607 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.9062
+2025-08-12 18:47:54,488 - INFO - \U0001f50d Query: What is the Court’s view on interim relief pending final disposal?
+2025-08-12 18:47:54,516 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:47:54,516 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:48:03,906 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-08-12 18:48:03,906 - INFO - Retrying request to /chat/completions in 0.487271 seconds
+2025-08-12 18:48:05,089 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-08-12 18:48:05,089 - INFO - Retrying request to /chat/completions in 0.826379 seconds
+2025-08-12 18:48:06,239 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-08-12 18:48:06,239 - ERROR - \u274c Retrieval failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-08-12 18:49:01,688 - INFO - \U0001f50d Query: What is the Court’s view on interim relief pending final disposal?
+2025-08-12 18:49:01,714 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:49:01,714 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:49:12,288 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-08-12 18:49:12,288 - INFO - Retrying request to /chat/completions in 0.494949 seconds
+2025-08-12 18:49:13,138 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-08-12 18:49:13,138 - INFO - Retrying request to /chat/completions in 0.922410 seconds
+2025-08-12 18:49:14,634 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-08-12 18:49:14,636 - ERROR - \u274c Retrieval failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-08-12 18:52:25,767 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:52:25,767 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:52:37,446 - INFO - Loading Pinecone index 'test-txt-chatbot1'...
+2025-08-12 18:52:38,792 - INFO - \u2705 Successfully loaded Pinecone index 'test-txt-chatbot1'.
+2025-08-12 18:52:43,581 - INFO - \U0001f50d Query: Can fresh evidence be introduced at the appellate stage?
+2025-08-12 18:52:43,608 - INFO - Use pytorch device_name: cpu
+2025-08-12 18:52:43,609 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 18:52:51,579 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 18:52:51,812 - INFO - \u2705 Similarity (query \u2194 answer): 0.7430
+2025-08-12 18:52:51,812 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8246
+2025-08-12 19:16:29,098 - INFO - \U0001f50d Query: Can fresh evidence be introduced at the appellate stage?
+2025-08-12 19:16:29,136 - INFO - Use pytorch device_name: cpu
+2025-08-12 19:16:29,136 - INFO - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-08-12 19:16:38,093 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-12 19:16:38,327 - INFO - \u2705 Similarity (query \u2194 answer): 0.7709
+2025-08-12 19:16:38,327 - INFO - \u2705 Faithfulness (context \u2194 answer): 0.8571
